@@ -13,9 +13,9 @@ header {
 }
 
 #header-text {
-    /* position: absolute; */
     text-shadow: 2px 2px #000000;
     padding-top: 70%;
+    padding-bottom: 10px;
 }
 
 .nav-text {
