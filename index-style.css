@@ -9,6 +9,7 @@ body {
 header {
     position: relative;
     background-image: url('photo-banner.jpg');
+    background-repeat: no-repeat;
 }
 
 #header-text {
