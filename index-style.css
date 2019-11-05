@@ -67,15 +67,16 @@ nav {
 
 .nav-link {
     padding: 10px;
-    padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
     display: block;
+    width: fit-content;
+    margin-top: 15px;
 }
 
 .nav-link:hover {
     cursor: pointer;
-    filter: invert(100%);
+    color: black;
 }
 
 ul {
