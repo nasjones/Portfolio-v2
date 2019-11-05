@@ -1,7 +1,7 @@
 body {
     font-family: 'Inconsolata', monospace;
     background-color: #fceade;
-    color: rgb(255, 255, 255);
+    color: rgb(245, 131, 150);
     line-height: 22px;
     text-align: center;
     margin: 0px;
@@ -37,7 +37,6 @@ header {
 
 #hamburger:hover {
     cursor: pointer;
-    filter: invert(100%);
 }
 
 #nav-text {
@@ -47,18 +46,51 @@ header {
     display: none;
 }
 
-#nav-text ul {
-    text-align: left;
+input {
+    visibility: hidden;
 }
 
-#nav-text li {
+label {
     display: block;
+    text-align: left;
+    margin-left: 15px;
 }
+
+label:hover {
+    cursor: pointer;
+    filter: invert(100%);
+}
+
+input:selected+label {
+    text-decoration: line-through;
+    filter: invert(100%);
+}
+
+#nav-text ul {
+    text-align: left;
+    list-style: none;
+}
+
+#stage {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.displayed {
+    position: absolute;
+}
+
+/* #nav-text li {
+    display: block;
+} */
 
 nav {
     background-color: #9ca8d3;
     border: 1px solid black;
-    margin: 0px 0px 40px;
     padding: 5px;
     min-height: 25px;
     position: relative;
@@ -83,19 +115,23 @@ ul {
     list-style-type: none;
 }
 
+#display1 {
+    padding: 20px;
+    position: relative;
+}
+
+/* #display2 {
+    display: none;
+} */
+
 .work-photo {
     border: 1px solid black;
     height: 300px;
     box-shadow: 7px 2px 15px black;
 }
 
-#large-space {
-    display: block;
-    content: "";
-    margin-top: 800px;
-}
-
 #contact-info {
+    top: 90%;
     margin-bottom: 10px;
 }
 
@@ -104,8 +140,7 @@ ul {
     width: 50px;
 }
 
-/* 
-@media screen and (min-width:520px) {
+/* @media screen and (min-width:520px) {
     body {
         text-align: left;
     }
@@ -154,9 +189,9 @@ ul {
     p {
         margin: 0px 30px;
     }
-}
+} */
 
-@media screen and (min-width:830px) {
+/* @media screen and (min-width:830px) {
     main {
         display: grid;
         grid-template-columns: 50% 1fr;

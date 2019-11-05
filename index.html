@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Karla&display=swap" rel="stylesheet">
     <link href="index-style.css" rel="stylesheet" type="text/css" />
     <link rel="icon" href="personal-favicon.png">
 </head>
 
 <body>
     <header>
-        <!-- <img src="photo-banner.jpg" id="banner-pic"> -->
         <section id="header-text">
             <h1>Hello, I'm Nassir. I'm a web developer and recent graduate of Thinkful's Engineering flex program.</h2>
         </section>
@@ -20,46 +20,59 @@
 
     <nav>
         <ul id="nav-text">
-            <li><a id="bio-scroll" class="nav-link">About Me</a>
+            <li>
+                <label><input type="radio" id="bio-scroll" class="nav-link" onclick="update()" name="display">About
+                    Me</input></label>
             </li>
-            <li> <a id="work-scroll" class="nav-link">Work</a>
+            <li>
+                <label><input type="radio" id="work-scroll" class="nav-link" onclick="update()"
+                        name="display">Work</input></label>
             </li>
-            <li><a id="contact-scroll" class="nav-link">Contact</a>
+            <li>
+                <label><input type="radio" id="contact-scroll" class="nav-link" name="display">Contact</input></label>
             </li>
         </ul>
         <a class="icon" onclick="hamMenu()">
             <img id="hamburger" src="hamburger-icon.png">
         </a>
     </nav>
-    <br id="large-space">
-    <h3>About Me</h3>
-    <p id="bio">I’m a web developer/foodie who’s passion for development came from my love of critical thinking and
-        problem-solving. This is the perfect field to indulge my self in something I love to do. When I'm
-        not playing with some algorithm on my computer I'm playing video games, eating with friends, or reading. My
-        favorite genre is Science-fiction I hope to be apart of the development that brings forth the future I love
-        reading about.
-    </p>
-    <hr>
-    <main>
-        <article class="work" id="item-1">
-            <h3>My personal FullMetal quiz</h3>
-            <a href="https://nasjones.github.io/quiz-app/" target="_blank">
-                <img class="work-photo" src="quiz-app-cap.png" alt="quiz-app photo">
-            </a>
-            <p>This is a quiz that I designed based on the tv-show FullMetal Alchemist. I designed the quiz so that
-                the questions and choices for the questions appear in a random order so that the quiz isn't the same
-                every
-                time.
-                This project showcases my skills in Javascript/Jquery/CSS/HTML.</p>
-            <ul>
-                <li>live- <a href="https://nasjones.github.io/quiz-app/" target="_blank">Take the quiz!</a>
-                </li>
-                <li>repo- <a href="https://github.com/nasjones/quiz-app" target="_blank">Checkout the files.</a></li>
-            </ul>
-        </article>
+    <main id="stage">
+        <section id="display1" class="displayed">
+            <h2>About Me</h2>
+            <p id="bio" class="body-text">I’m a web developer/foodie who’s passion for development came from my love of
+                critical thinking
+                and
+                problem-solving. This is the perfect field to indulge my self in something I love to do. When I'm
+                not playing with some algorithm on my computer I'm playing video games, eating with friends, or reading.
+                My
+                favorite genre is Science-fiction I hope to be apart of the development that brings forth the future I
+                love
+                reading about.
+            </p>
+        </section>
+        <section id="display2" class="displayed">
+            <article class="work" id="item-1">
+                <h3>My personal FullMetal quiz</h3>
+                <a href="https://nasjones.github.io/quiz-app/" target="_blank">
+                    <img class="work-photo" src="quiz-app-cap.png" alt="quiz-app photo">
+                </a>
+                <p class="body-text">This is a quiz that I designed based on the tv-show FullMetal Alchemist. I designed
+                    the quiz so that
+                    the questions and choices for the questions appear in a random order so that the quiz isn't the same
+                    every
+                    time.
+                    This project showcases my skills in Javascript/Jquery/CSS/HTML.</p>
+                <ul>
+                    <li>live- <a href="https://nasjones.github.io/quiz-app/" target="_blank">Take the quiz!</a>
+                    </li>
+                    <li>repo- <a href="https://github.com/nasjones/quiz-app" target="_blank">Checkout the files.</a>
+                    </li>
+                </ul>
+            </article>
+        </section>
 
+        <hr>
     </main>
-    <hr>
     <footer id="contact-info">
         <h4>Contact Me:</h4>
         <a href="mailto:nassircjones@gmail.com"><img class="contact-img" src="email-favicon.png"></a>
@@ -68,8 +81,7 @@
         <a href="https://github.com/nasjones" target="_blank"><img class="contact-img" src="github-favicon.jpg"></a>
     </footer>
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/cuid/1.3.8/browser-cuid.min.js"></script>
-    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="index-java.js"></script>
 </body>
 
