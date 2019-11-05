@@ -4,6 +4,8 @@ body {
     color: rgb(255, 255, 255);
     line-height: 22px;
     text-align: center;
+    margin: 0px;
+    padding: 0px;
 }
 
 header {
@@ -71,6 +73,10 @@ nav {
 
 ul {
     list-style-type: none;
+}
+
+#contact-info {
+    margin-bottom: 10px;
 }
 
 .contact-img {
