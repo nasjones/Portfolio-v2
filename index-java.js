@@ -1,5 +1,5 @@
-function myFunction() {
-    var x = document.getElementById("myLinks");
+function hamMenu() {
+    var x = document.getElementById("nav-text");
     if (x.style.display === "block") {
         x.style.display = "none";
     } else {
