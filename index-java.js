@@ -32,16 +32,40 @@ function hamMenu() {
 
 // $(begin)
 
+function leftOut() {
+
+}
+
 $('.body-text').click(function () {
 
     $('.displayed').animate({
         left: '-100%'
     }, 500, function () {
+        $('#stage').html(`<section id="display2" class="displayed">
+            <article class="work" id="item-1">
+                <h3>My personal FullMetal quiz</h3>
+                <a href="https://nasjones.github.io/quiz-app/" target="_blank">
+                    <img class="work-photo" src="quiz-app-cap.png" alt="quiz-app photo">
+                </a>
+                <p class="body-text">This is a quiz that I designed based on the tv-show FullMetal Alchemist. I designed
+                    the quiz so that
+                    the questions and choices for the questions appear in a random order so that the quiz isn't the same
+                    every
+                    time.
+                    This project showcases my skills in Javascript/Jquery/CSS/HTML.</p>
+                <ul>
+                    <li>live- <a href="https://nasjones.github.io/quiz-app/" target="_blank">Take the quiz!</a>
+                    </li>
+                    <li>repo- <a href="https://github.com/nasjones/quiz-app" target="_blank">Checkout the files.</a>
+                    </li>
+                </ul>
+            </article>
+        </section>`);
         $('.displayed').css('left', '150%');
-        $('.displayed').appendTo('#stage');
+        // $('.displayed').appendTo('#stage');
     });
 
-    $('.displayed').next().animate({
+    $('.displayed').animate({
         left: '0%'
     }, 500);
 });

@@ -76,12 +76,12 @@ input:selected+label {
     margin: 0px;
     padding: 0px;
     width: 100%;
-    height: 100%;
+    height: auto;
     overflow: hidden;
 }
 
 .displayed {
-    position: absolute;
+    /* position: relative; */
 }
 
 /* #nav-text li {
@@ -123,6 +123,10 @@ ul {
 /* #display2 {
     display: none;
 } */
+
+.body-text {
+    padding: 40px;
+}
 
 .work-photo {
     border: 1px solid black;
