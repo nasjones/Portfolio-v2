@@ -29,6 +29,7 @@ header {
 #hamburger {
     height: 20px;
     margin-top: 5px;
+    margin-left: 5px;
     display: block;
     position: absolute;
     left: 0;
@@ -68,11 +69,6 @@ label:hover {
     filter: invert(100%);
 }
 
-/* input:selected+label {
-    text-decoration: line-through;
-    filter: invert(100%);
-} */
-
 #stage {
     position: relative;
     margin: 0px;
@@ -81,14 +77,6 @@ label:hover {
     height: auto;
     overflow: hidden;
 }
-
-/* .displayed {
-    position: relative;
-} */
-
-/* #nav-text li {
-    display: block;
-} */
 
 nav {
     background-color: #9ca8d3;
@@ -111,7 +99,6 @@ label input[type="radio"]:checked~.radio-text {
     font-size: 17px;
     display: block;
     width: fit-content;
-    /* margin-top: 8px; */
 }
 
 .nav-link:hover {
@@ -121,10 +108,10 @@ label input[type="radio"]:checked~.radio-text {
 
 ul {
     list-style-type: none;
+    padding-inline-start: 0px;
 }
 
 .displayed {
-    padding: 20px;
     position: relative;
 }
 
@@ -142,6 +129,7 @@ ul {
     border: 1px solid black;
     height: 300px;
     box-shadow: 7px 2px 15px black;
+    width: 300px;
 }
 
 #contact-info {
