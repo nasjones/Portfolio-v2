@@ -35,7 +35,7 @@ function hamMenu() {
 function textOut() {
     $('#stage').on('swipeleft', e => {
         $(e.currentTarget).children().animate({
-            left: '-100%'
+            left: '-150%'
         }, 500);
         setTimeout(stageUpdate, 800);
 
@@ -53,7 +53,11 @@ function stageUpdate() {
         }, 500);
     }
     else if (staged == 'display2') {
-
+        $('#stage').html(moreHtml);
+        $('#stage').find('.displayed').css('left', '150%');
+        $('.displayed').animate({
+            left: '0%'
+        }, 500);
     }
     else {
         $('#stage').html(bioHtml);
