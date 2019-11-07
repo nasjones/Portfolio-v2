@@ -25,7 +25,7 @@ function stageUpdate() {
         $('.displayed').animate({
             left: '0%'
         }, 500);
-        $("#workRad").attr("checked", checked);
+        $("#workRad").attr("checked", true);
     }
     else if (staged == 'display2') {
         $('#stage').html(moreHtml);
@@ -33,7 +33,7 @@ function stageUpdate() {
         $('.displayed').animate({
             left: '0%'
         }, 500);
-        $("#moreRad").attr("checked", checked);
+        $("#moreRad").attr("checked", true);
     }
     else {
         $('#stage').html(bioHtml);
@@ -41,7 +41,7 @@ function stageUpdate() {
         $('.displayed').animate({
             left: '0%'
         }, 500);
-        $("#bioRad").attr("checked", checked);
+        $("#bioRad").attr("checked", true);
     }
 
 }
