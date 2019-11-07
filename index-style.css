@@ -61,14 +61,14 @@ label:hover {
     filter: invert(100%);
 }
 
-input:selected+label {
+/* input:selected+label {
     text-decoration: line-through;
     filter: invert(100%);
-}
+} */
 
-#nav-text ul {
+#nav-text {
     text-align: left;
-    list-style: none;
+    /* list-style: none; */
 }
 
 #stage {
@@ -80,9 +80,9 @@ input:selected+label {
     overflow: hidden;
 }
 
-.displayed {
-    /* position: relative; */
-}
+/* .displayed {
+    position: relative;
+} */
 
 /* #nav-text li {
     display: block;
@@ -95,6 +95,11 @@ nav {
     min-height: 25px;
     position: relative;
     font-size: 15px;
+}
+
+input[type="radio"]:checked+label {
+    text-decoration: line-through;
+    filter: invert(100%);
 }
 
 .nav-link {
@@ -115,20 +120,22 @@ ul {
     list-style-type: none;
 }
 
-#display1 {
+.displayed {
     padding: 20px;
     position: relative;
 }
-
-/* #display2 {
-    display: none;
-} */
 
 .body-text {
     padding: 40px;
 }
 
 .work-photo {
+    border: 1px solid black;
+    height: 300px;
+    box-shadow: 7px 2px 15px black;
+}
+
+.food {
     border: 1px solid black;
     height: 300px;
     box-shadow: 7px 2px 15px black;
