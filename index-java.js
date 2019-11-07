@@ -8,7 +8,7 @@ function hamMenu() {
 }
 
 function textOut() {
-    $('#stage').on('swipe', e => {
+    $('#stage').on('swipeleft', e => {
         $(e.currentTarget).children().animate({
             left: '-150%'
         }, 500);
@@ -48,6 +48,7 @@ function stageUpdate() {
 
 
 $("input[type='radio']").click(function () {
+    hamMenu();
     var radioId = $("input[name='display']:checked").attr('id');
     console.log(radioId);
     if (radioId == 'workRad') {
@@ -59,7 +60,6 @@ $("input[type='radio']").click(function () {
             $('.displayed').animate({
                 left: '0%'
             }, 500);
-            // $("#workRad").attr("checked", true);
         }, 800);
     }
     else if (radioId == 'moreRad') {
@@ -71,7 +71,6 @@ $("input[type='radio']").click(function () {
             $('.displayed').animate({
                 left: '0%'
             }, 500);
-            // $("#workRad").attr("checked", true);
         }, 800);
     }
     else {
@@ -83,12 +82,8 @@ $("input[type='radio']").click(function () {
             $('.displayed').animate({
                 left: '0%'
             }, 500);
-            // $("#workRad").attr("checked", true);
         }, 800);
     }
-    // if (radioValue) {
-    //     alert("Your are a - " + radioValue);
-    // }
 });
 
 $(textOut);
