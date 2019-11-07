@@ -87,3 +87,4 @@ $("input[type='radio']").click(function () {
 });
 
 $(textOut);
+setTimeout(function () { $('#swipeAlert').empty() }, 4000);

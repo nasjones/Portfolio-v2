@@ -53,6 +53,17 @@ header {
     border-top: none;
 }
 
+#swipeAlert {
+    display: hidden;
+}
+
+@media only screen and (max-width:480px) {
+    #swipeAlert {
+        display: block;
+        background-color: lightgray;
+    }
+}
+
 input {
     visibility: hidden;
 }
