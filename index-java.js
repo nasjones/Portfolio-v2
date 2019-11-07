@@ -25,7 +25,7 @@ function stageUpdate() {
         $('.displayed').animate({
             left: '0%'
         }, 500);
-        $("#workRad").attr("checked", true);
+        $("#workRad").attr("checked", checked);
     }
     else if (staged == 'display2') {
         $('#stage').html(moreHtml);
@@ -33,7 +33,7 @@ function stageUpdate() {
         $('.displayed').animate({
             left: '0%'
         }, 500);
-        $("#moreRad").attr("checked", true);
+        $("#moreRad").attr("checked", checked);
     }
     else {
         $('#stage').html(bioHtml);
@@ -41,7 +41,7 @@ function stageUpdate() {
         $('.displayed').animate({
             left: '0%'
         }, 500);
-        $("#bioRad").attr("checked", true);
+        $("#bioRad").attr("checked", checked);
     }
 
 }
@@ -86,5 +86,7 @@ $("input[type='radio']").click(function () {
     }
 });
 
+$("#closeAlert").click(function () {
+    $("#swipeAlert").remove();
+})
 $(textOut);
-setTimeout(function () { $('#swipeAlert').empty() }, 4000);

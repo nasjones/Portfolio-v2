@@ -59,8 +59,23 @@ header {
 
 @media only screen and (max-width:480px) {
     #swipeAlert {
+        padding: 2px;
+        margin-top: 5px;
         display: block;
         background-color: lightgray;
+    }
+    #closeAlert {
+        height: 20px;
+        display: inline-block;
+        padding: 0;
+        border: 1px solid rgb(245, 131, 150);
+        border-radius: 2px;
+        font: inherit;
+        color: inherit;
+        background-color: transparent;
+        margin-left: 10px;
+        box-shadow: 2px 2px 2px black;
+        line-height: 50%;
     }
 }
 
