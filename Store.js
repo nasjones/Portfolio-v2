@@ -31,4 +31,21 @@ let workHtml = `<section id="display2" class="displayed">
         </article>
     </section>`;
 
-let moreHtml = ``
+let moreHtml = `<section id="display3" class="displayed">
+            <h2>My favorite foods around the city:</h2>
+            <ul>
+                <li><img src="lukes-lobster.jpeg" class="food">
+                    <p>lukes-lobster</p>
+                </li>
+                <li><img src="thelewala.jpg" class="food">
+                    <p>Thelewala</p>
+                </li>
+                <li><img src="smorg.jpg" class="food">
+                    <p>Smorgasburg</p>
+                </li>
+                <li><img src="Insomnia.jpg" class="food">
+                    <p>Insomnia Cookies</p>
+                </li>
+            </ul>
+
+        </section>`

@@ -19,27 +19,29 @@
     </header>
 
     <nav>
-        <div id="nav-text">
-            <!-- <li> -->
-            <input type="radio" id="bioRad" class="nav-link" onclick="update()" name="display" checked> <label>About
-                Me</label> </input>
-
-            <!-- </li> -->
-            <!-- <li> -->
-            <input type="radio" id="workRad" class="nav-link" onclick="update()" name="display"></input>
-            <label>Work</label>
-            <!-- </li> -->
-            <!-- <li> -->
-            <input type="radio" id="moreRad" class="nav-link" name="display"></input>
-            <label>Contact</label>
-            <!-- </li> -->
-        </div>
         <a class="icon" onclick="hamMenu()">
             <img id="hamburger" src="hamburger-icon.png">
         </a>
+        <div id="nav-text">
+            <!-- <li> -->
+            <label><input type="radio" id="bioRad" class="nav-link" name="display" checked> <span
+                    class="radio-text">About
+                    Me </span></label>
+
+            <!-- </li> -->
+            <!-- <li> -->
+            <label><input type="radio" id="workRad" class="nav-link" name="display">
+                <span class="radio-text">Work</span></label>
+            <!-- </li> -->
+            <!-- <li> -->
+            <label><input type="radio" id="moreRad" class="nav-link" name="display">
+                <span class="radio-text">Contact</span></label>
+            <!-- </li> -->
+        </div>
+
     </nav>
     <main id="stage">
-        <!-- <section id="display1" class="displayed">
+        <section id="display1" class="displayed">
             <h2>About Me</h2>
             <p id="bio" class="body-text">I’m a web developer/foodie who’s passion for development came from my love of
                 critical thinking
@@ -51,21 +53,6 @@
                 love
                 reading about.
             </p>
-        </section> -->
-        <section id="display3" class="displayed">
-            <h2>My favorite foods around the city:</h2>
-            <ul>
-                <li><img src="lukes-lobster.jpeg" class="food">
-                    <p>lukes-lobster</p>
-                </li>
-                <li><img src="thelewala.jpg" class="food">
-                    <p>Thelewala</p>
-                </li>
-                <li><img src="smorg.jpg" class="food">
-                    <p>Smorgasburg</p>
-                </li>
-            </ul>
-
         </section>
 
     </main>

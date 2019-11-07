@@ -41,9 +41,13 @@ header {
 
 #nav-text {
     padding: 0;
-    margin: 0;
+    /* margin: 0; */
     margin-block-start: 0;
     display: none;
+    position: absolute;
+    text-align: left;
+    background-color: #9ca8d3;
+    margin-top: 20px;
 }
 
 input {
@@ -65,11 +69,6 @@ label:hover {
     text-decoration: line-through;
     filter: invert(100%);
 } */
-
-#nav-text {
-    text-align: left;
-    /* list-style: none; */
-}
 
 #stage {
     position: relative;
@@ -97,7 +96,7 @@ nav {
     font-size: 15px;
 }
 
-input[type="radio"]:checked+label {
+label input[type="radio"]:checked~.radio-text {
     text-decoration: line-through;
     filter: invert(100%);
 }
@@ -108,7 +107,7 @@ input[type="radio"]:checked+label {
     font-size: 17px;
     display: block;
     width: fit-content;
-    margin-top: 15px;
+    /* margin-top: 8px; */
 }
 
 .nav-link:hover {
@@ -126,7 +125,7 @@ ul {
 }
 
 .body-text {
-    padding: 40px;
+    padding: 0px 40px;
 }
 
 .work-photo {
