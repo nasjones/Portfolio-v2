@@ -115,5 +115,5 @@ $("input[type='radio']").click(function () {
 
 $("#closeAlert").click(function () {
     $("#swipeAlert").remove();
-}); s
+});
 $(textOut);
