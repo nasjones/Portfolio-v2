@@ -8,6 +8,10 @@ body {
     padding: 0px;
 }
 
+#ui-loader ui-corner-all ui-loader-default ui-body-a {
+    visibility: hidden;
+}
+
 h2 {
     color: #b54458;
     font-weight: bolder;
@@ -70,6 +74,10 @@ header {
 
 #swipeAlert {
     display: none;
+}
+
+.overlay {
+    margin-bottom: 40px;
 }
 
 @media only screen and (max-width:480px) {
