@@ -1,6 +1,6 @@
 let bioHtml = `<article id="display2" class="displayed">
             <h2>About Me</h2>
-            <p id="bio" class="body-text">I’m a web developer/foodie who’s passion for development came from my love of
+            <p id="bio" class="body-text"><span>I’m a web developer/foodie who’s passion for development came from my love of
                 critical thinking
                 and
                 problem-solving. This is the perfect field to indulge my self in something I love to do. When I'm

@@ -19,8 +19,20 @@ header {
     background-repeat: no-repeat;
 }
 
+#bigPhoto {
+    height: 422px;
+    width: auto;
+    overflow: hidden;
+    background: url('photo-banner.jpg');
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position: 30%;
+    grid-area: photo;
+}
+
 #nameIntro {
     display: block;
+    font-size: larger;
 }
 
 #banner-pic {
@@ -28,10 +40,10 @@ header {
     height: 450px;
 }
 
-#header-text {
+/* #header-text {
     padding-top: 70%;
     padding-bottom: 10px;
-}
+} */
 
 #hamburger {
     height: 20px;
@@ -49,10 +61,10 @@ header {
     display: none;
     position: absolute;
     text-align: left;
-    background-color: #9ca8d3;
+    background-color: #AF7595;
     margin-top: 25px;
     top: 10px;
-    border: black 1px solid;
+    /* border: black 1px solid; */
     border-top: none;
 }
 
@@ -154,6 +166,11 @@ ul {
     box-shadow: 7px 2px 15px black;
 }
 
+.content {
+    height: 422px;
+    background-size: cover;
+}
+
 #contact-info {
     top: 90%;
     padding-bottom: 10px;
@@ -237,7 +254,7 @@ ul {
         display: inline-block;
     }
     p {
-        margin: 20px 30px;
+        margin: 30px 50px;
     }
     .work-photo {
         height: 450px;
