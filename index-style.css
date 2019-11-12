@@ -169,6 +169,7 @@ ul {
 .content {
     height: 422px;
     background-size: cover;
+    background-position-x: center;
 }
 
 #contact-info {
