@@ -37,7 +37,7 @@ function textOut() {
 function stageUpdate() {
     let staged = $('#stage').find('.displayed').attr('id');
     if (staged == 'display1') {
-        $('#stage').html(workHtml);
+        $('#stage').html(bioHtml);
         $('#stage').find('.displayed').css('left', '150%');
         $('.displayed').animate({
             left: '0%'
@@ -53,7 +53,7 @@ function stageUpdate() {
         $("#moreRad").attr("checked", true);
     }
     else {
-        $('#stage').html(bioHtml);
+        $('#stage').html(workHtml);
         $('#stage').find('.displayed').css('left', '150%');
         $('.displayed').animate({
             left: '0%'
