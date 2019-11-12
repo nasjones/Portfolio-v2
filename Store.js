@@ -1,4 +1,4 @@
-let bioHtml = `<section id="display1" class="displayed">
+let bioHtml = `<article id="display2" class="displayed">
             <h2>About Me</h2>
             <p id="bio" class="body-text">I’m a web developer/foodie who’s passion for development came from my love of
                 critical thinking
@@ -10,14 +10,15 @@ let bioHtml = `<section id="display1" class="displayed">
                 love
                 reading about.
             </p>
-        </section>`;
+        </article>`;
 
-let workHtml = `<section id="display2" class="displayed">
+let workHtml = `<article id="display1" class="displayed">
         <h2>My Work</h2>
-        <article class="work" id="item-1">
+        <section class="work" id="item-1" >
             <h3>My personal FullMetal quiz</h3>
             <a href="https://nasjones.github.io/quiz-app/" target="_blank" class="nonClick">
-                 <img class="work-photo" src="quiz-app-cap.png" alt="quiz-app photo">
+            <section class="content" id="quiz" style="background-image: url('quiz-app-cap.png');">
+            </section>
             </a>
             <p class="body-text">This is a quiz that I designed based on the tv-show FullMetal Alchemist. 
             I designed the quiz so that the questions and choices for the questions appear in a random order so that the quiz isn't the same every time.
@@ -28,24 +29,48 @@ let workHtml = `<section id="display2" class="displayed">
                 <li>repo- <a href="https://github.com/nasjones/quiz-app" target="_blank" class="nonClick">Checkout the files.</a>
                 </li>
              </ul>
-        </article>
-    </section>`;
+        </section>
+    </article>`;
 
-let moreHtml = `<section id="display3" class="displayed">
-            <h2>My favorite foods around the city:</h2>
+let moreHtml = `<article id="display3" class="displayed">
+            <h2>A few of my favorite things:</h2>
             <ul>
-                <li><img src="lukes-lobster.jpeg" class="food">
-                    <p>lukes-lobster</p>
-                </li>
-                <li><img src="thelewala.jpg" class="food">
-                    <p>Thelewala</p>
-                </li>
-                <li><img src="smorg.jpg" class="food">
-                    <p>Smorgasburg</p>
-                </li>
-                <li><img src="Insomnia.jpg" class="food">
-                    <p>Insomnia Cookies</p>
-                </li>
+                <h3>My favorite restaurant</h3>
+                <section class="content" style="background-image: url('lukes-lobster.jpeg');">
+                    <div class="overlay">
+                        <li>
+                            <h4>Lukes-Lobster</h4>
+                            <p>The best seafood rolls in New York!</p>
+                        </li>
+                    </div>
+                </section>
+                <h3>My favorite video game</h3>
+                <section class="content" style="background-image: url('KH.jpg');">
+                    <div class="overlay">
+                        <li>
+                            <h4>Kingdom-Hearts</h4>
+                            <p>The greatest video game of all time!</p>
+                        </li>
+                    </div>
+                </section>
+                <h3>My favorite Book</h3>
+                <section class="content" style="background-image: url('POG.jpg');">
+                    <div class="overlay">
+                        <li>
+                            <h4>Player Of Games</h4>
+                            <p>An incredible novel by Iain M. Banks with an intricate and beautiful story.</p>
+                        </li>
+                    </div>
+                </section>
+                <h3>My favorite show</h3>
+                <section class="content" style="background-image: url('Stein.jpg');">
+                    <div class="overlay">
+                        <li>
+                            <h4>Steins;Gate</h4>
+                            <p>An amazing story with beautiful art, a wonderful story, and great characters.</p>
+                        </li>
+                    </div>
+                </section>
             </ul>
 
-        </section>`
+        </article>`

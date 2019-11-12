@@ -13,9 +13,11 @@
 
 <body>
     <header>
-        <section id="header-text">
-            <h1>Hello, I'm Nassir. I'm a web developer and recent graduate of Thinkful's Engineering flex program.</h2>
-        </section>
+        <article id="header-text">
+            <h1><span id="nameIntro">Hello, I'm Nassir.</span> I'm a web developer and recent graduate of Thinkful's
+                Engineering flex program.</h1>
+        </article>
+        <div id="bigPhoto"></div>
     </header>
 
     <nav>
@@ -23,12 +25,10 @@
             <img id="hamburger" src="hamburger-icon.png">
         </a>
         <div id="nav-text">
-            <label><input type="radio" id="bioRad" class="nav-link" name="display" checked> <span
-                    class="radio-text">About
-                    Me </span></label>
-
-            <label><input type="radio" id="workRad" class="nav-link" name="display">
+            <label><input type="radio" id="workRad" class="nav-link" name="display" checked disabled>
                 <span class="radio-text">Work</span></label>
+            <label><input type="radio" id="bioRad" class="nav-link" name="display"> <span class="radio-text">About Me
+                </span></label>
 
             <label><input type="radio" id="moreRad" class="nav-link" name="display">
                 <span class="radio-text">Extra</span></label>
@@ -37,21 +37,30 @@
     </nav>
     <div id="swipeAlert"><span>Swipe or use the menu to explore!</span> <button id="closeAlert">x</button></div>
     <main id="stage">
-
-        <section id="display1" class="displayed">
-            <h2>About Me</h2>
-            <p id="bio" class="body-text">I’m a web developer/foodie who’s passion for development came from my love of
-                critical thinking
-                and
-                problem-solving. This is the perfect field to indulge my self in something I love to do. When I'm
-                not playing with some algorithm on my computer I'm playing video games, eating with friends, or reading.
-                My
-                favorite genre is Science-fiction I hope to be apart of the development that brings forth the future I
-                love
-                reading about.
-            </p>
-        </section>
-
+        <article id="display1" class="displayed">
+            <h2>My Work</h2>
+            <section class="work" id="item-1">
+                <h3>My personal FullMetal quiz</h3>
+                <a href="https://nasjones.github.io/quiz-app/" target="_blank" class="nonClick">
+                    <section class="content" id="quiz" style="background-image: url('quiz-app-cap.png');">
+                    </section>
+                </a>
+                <p class="body-text">This is a quiz that I designed based on the tv-show FullMetal Alchemist.
+                    I designed the quiz so that the questions and choices for the questions appear in a random order so
+                    that the
+                    quiz isn't the same every time.
+                    This project showcases my skills in Javascript/Jquery/CSS/HTML.</p>
+                <ul>
+                    <li>live- <a href="https://nasjones.github.io/quiz-app/" target="_blank" class="nonClick">Take the
+                            quiz!</a>
+                    </li>
+                    <li>repo- <a href="https://github.com/nasjones/quiz-app" target="_blank" class="nonClick">Checkout
+                            the
+                            files.</a>
+                    </li>
+                </ul>
+            </section>
+        </article>
     </main>
     <hr>
     <footer id="contact-info">

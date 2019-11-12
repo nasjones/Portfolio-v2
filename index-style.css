@@ -1,18 +1,26 @@
 body {
     font-family: 'Inconsolata', monospace;
-    background-color: #fceade;
-    color: rgb(245, 131, 150);
+    background-color: #AED4E6;
+    color: #5C1A1B;
     line-height: 22px;
     text-align: center;
     margin: 0px;
     padding: 0px;
 }
 
+h2 {
+    color: #b54458;
+    font-weight: bolder;
+}
+
 header {
     position: relative;
-    background-image: url('photo-banner.jpg');
     background-position: 20% 50%;
     background-repeat: no-repeat;
+}
+
+#nameIntro {
+    display: block;
 }
 
 #banner-pic {
@@ -21,7 +29,6 @@ header {
 }
 
 #header-text {
-    text-shadow: 2px 2px #000000;
     padding-top: 70%;
     padding-bottom: 10px;
 }
@@ -34,10 +41,6 @@ header {
     position: absolute;
     left: 0;
     top: 0;
-}
-
-#hamburger:hover {
-    cursor: pointer;
 }
 
 #nav-text {
@@ -105,8 +108,7 @@ label:hover {
 }
 
 nav {
-    background-color: #9ca8d3;
-    border: 1px solid black;
+    background-color: #AF7595;
     padding: 5px;
     min-height: 25px;
     position: relative;
@@ -143,6 +145,7 @@ ul {
 
 .body-text {
     padding: 0px 40px;
+    color: #5C1A1B;
 }
 
 .work-photo {
@@ -151,16 +154,11 @@ ul {
     box-shadow: 7px 2px 15px black;
 }
 
-.food {
-    border: 1px solid black;
-    height: 300px;
-    box-shadow: 7px 2px 15px black;
-    width: 300px;
-}
-
 #contact-info {
     top: 90%;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
+    background-color: #AF7595;
+    margin-top: -21px;
 }
 
 .contact-img {
@@ -168,10 +166,7 @@ ul {
     width: 50px;
 }
 
-/* @media screen and (min-width:520px) {
-    body {
-        text-align: left;
-    }
+@media screen and (min-width:500px) {
     header {
         display: grid;
         grid-template-columns: 50% 1fr;
@@ -180,18 +175,22 @@ ul {
     #first-name {
         color: rgb(153, 81, 81);
     }
-    #banner-pic {
+    #bio {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    #bigPhoto {
         height: 422px;
         width: auto;
         overflow: hidden;
         background: url('photo-banner.jpg');
         background-repeat: no-repeat;
         background-position-x: left;
-        background-position: 33%;
+        background-position: 30%;
         grid-area: photo;
     }
     #header-text {
-        background-color: #fceade;
+        background-color: #AED4E6;
         border: 1px solid black;
         padding: 10px;
         height: auto;
@@ -199,25 +198,76 @@ ul {
         position: relative;
         grid-area: text;
     }
-    #bio {
-        margin: 0px 10px;
+    #hamburger {
+        display: none;
+    }
+    #nav-text {
+        display: grid;
+        grid-template-areas: "about work more";
+        position: relative;
+        border: none;
+        top: 0px;
+        margin-top: 0px;
+        background-color: #AF7595;
+    }
+    label {
+        text-align: center;
+        vertical-align: middle;
+        margin-top: -5px;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    #bioRad {
+        grid-area: about;
+    }
+    #workRad {
+        grid-area: work;
+    }
+    #moreRad {
+        grid-area: more;
     }
     h1 {
-        font-size: 5rem;
         line-height: 40px;
     }
     h2 {
-        position: absolute;
-        bottom: 0;
+        margin-block-end: 0;
     }
     main {
         text-align: center;
         display: inline-block;
     }
     p {
-        margin: 0px 30px;
+        margin: 20px 30px;
     }
-} */
+    .work-photo {
+        height: 450px;
+    }
+    .work-photo:hover {
+        background-image: url("quiz-app.gif");
+        background-repeat: no-repeat;
+        opacity: 100%;
+    }
+    .content {
+        width: inherit;
+        height: 400px;
+        background-repeat: no-repeat;
+        margin: 20px;
+        background-size: cover;
+        box-shadow: 7px 2px 15px black;
+    }
+    .overlay {
+        width: inherit;
+        height: inherit;
+        opacity: 0;
+        color: #AED4E6;
+    }
+    .overlay:hover {
+        display: inherit;
+        background: linear-gradient(to top, transparent, 70%, black);
+        cursor: pointer;
+        opacity: 100;
+    }
+}
 
 /* @media screen and (min-width:830px) {
     main {

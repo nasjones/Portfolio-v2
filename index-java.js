@@ -8,13 +8,30 @@ function hamMenu() {
 }
 
 function textOut() {
-    $('#stage').on('swipeleft', e => {
-        $(e.currentTarget).children().animate({
-            left: '-150%'
-        }, 500);
-        setTimeout(stageUpdate, 800);
+    if ($(window).width() < 500) {
+        $('#stage').on('swipeleft', e => {
+            $(e.currentTarget).children().animate({
+                left: '-150%'
+            }, 500);
+            setTimeout(stageUpdate, 800);
 
-    });
+        });
+    }
+    else {
+        $('#stage').on('click', e => {
+            if ($(e.target).is('a')) {
+            }
+            else if ($(e.target).is('img')) {
+            }
+            else {
+                $(e.currentTarget).children().animate({
+                    left: '-150%'
+                }, 500);
+                setTimeout(stageUpdate, 800);
+            }
+        });
+
+    }
 }
 
 function stageUpdate() {
@@ -37,7 +54,7 @@ function stageUpdate() {
     }
     else {
         $('#stage').html(bioHtml);
-        $('#stage').find('.displayed').css('left', '150%'), 500;
+        $('#stage').find('.displayed').css('left', '150%');
         $('.displayed').animate({
             left: '0%'
         }, 500);
@@ -48,10 +65,14 @@ function stageUpdate() {
 
 
 $("input[type='radio']").click(function () {
-    hamMenu();
+    if ($(window).width() < 500) {
+        hamMenu();
+    }
     var radioId = $("input[name='display']:checked").attr('id');
-    console.log(radioId);
     if (radioId == 'workRad') {
+        $('#bioRad').removeAttr("disabled");
+        $('#moreRad').removeAttr("disabled");
+        $('#workRad').attr("disabled", "true");
         $('#stage').children().animate({
             left: '-150%'
         }, 500); setTimeout(function () {
@@ -63,6 +84,9 @@ $("input[type='radio']").click(function () {
         }, 800);
     }
     else if (radioId == 'moreRad') {
+        $('#bioRad').removeAttr("disabled");
+        $('#moreRad').attr("disabled", "true");
+        $('#workRad').removeAttr("disabled");
         $('#stage').children().animate({
             left: '-150%'
         }, 500); setTimeout(function () {
@@ -74,6 +98,9 @@ $("input[type='radio']").click(function () {
         }, 800);
     }
     else {
+        $('#bioRad').attr("disabled", "true");
+        $('#moreRad').removeAttr("disabled");
+        $('#workRad').removeAttr("disabled");
         $('#stage').children().animate({
             left: '-150%'
         }, 500); setTimeout(function () {
@@ -88,5 +115,5 @@ $("input[type='radio']").click(function () {
 
 $("#closeAlert").click(function () {
     $("#swipeAlert").remove();
-})
+}); s
 $(textOut);
