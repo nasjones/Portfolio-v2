@@ -147,6 +147,7 @@ label input[type="radio"]:checked~.radio-text, .ui-state-disabled {
     font-size: 17px;
     display: block;
     width: fit-content;
+    text-align: center;
 }
 
 .nav-link:hover {
@@ -193,6 +194,9 @@ ul {
 }
 
 @media screen and (min-width:500px) {
+    .overlay {
+        display: inherit;
+    }
     header {
         display: grid;
         grid-template-columns: 50% 1fr;
