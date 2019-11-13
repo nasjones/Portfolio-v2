@@ -1,6 +1,6 @@
 let bioHtml = `<article id="display2" class="displayed">
             <h2>About Me</h2>
-            <p id="bio" class="body-text"><span>I’m a web developer/foodie who’s passion for development came from my love of
+            <p id="bio" class="body-text"><span>I was born and raised in Long Island New York. I’m a web developer/foodie who’s passion for development came from my love of
                 critical thinking
                 and
                 problem-solving. This is the perfect field to indulge my self in something I love to do. When I'm
@@ -44,6 +44,8 @@ let moreHtml = `<article id="display3" class="displayed">
                         </li>
                     </div>
                 </section>
+                <div class="mobile-description"><p>The best seafood rolls in New York!</p></div>
+                <hr>
                 <h3>My favorite video game</h3>
                 <section class="content" style="background-image: url('KH.jpg');">
                     <div class="overlay">
@@ -53,6 +55,8 @@ let moreHtml = `<article id="display3" class="displayed">
                         </li>
                     </div>
                 </section>
+                <div class="mobile-description"><p>The greatest video game of all time!</p></div>
+                <hr>
                 <h3>My favorite Book</h3>
                 <section class="content" style="background-image: url('POG.jpg');">
                     <div class="overlay">
@@ -62,6 +66,8 @@ let moreHtml = `<article id="display3" class="displayed">
                         </li>
                     </div>
                 </section>
+                <div class="mobile-description"><p>An incredible novel by Iain M. Banks with an intricate and beautiful story.</p></div>
+                <hr>
                 <h3>My favorite show</h3>
                 <section class="content" style="background-image: url('Stein.jpg');">
                     <div class="overlay">
@@ -71,6 +77,7 @@ let moreHtml = `<article id="display3" class="displayed">
                         </li>
                     </div>
                 </section>
+                <div class="mobile-description"><p>An amazing story with beautiful art, a wonderful story, and great characters.</p></div>
             </ul>
 
         </article>`

@@ -7,32 +7,6 @@ function hamMenu() {
     }
 }
 
-function textOut() {
-    if ($(window).width() < 500) {
-        $('#stage').on('swipeleft', e => {
-            $(e.currentTarget).children().animate({
-                left: '-150%'
-            }, 500);
-            setTimeout(stageUpdate, 800);
-
-        });
-    }
-    else {
-        $('#stage').on('click', e => {
-            if ($(e.target).is('a')) {
-            }
-            else if ($(e.target).is('img')) {
-            }
-            else {
-                $(e.currentTarget).children().animate({
-                    left: '-150%'
-                }, 500);
-                setTimeout(stageUpdate, 800);
-            }
-        });
-
-    }
-}
 
 function stageUpdate() {
     let staged = $('#stage').find('.displayed').attr('id');
@@ -114,6 +88,5 @@ $("input[type='radio']").click(function () {
 });
 
 $("#closeAlert").click(function () {
-    $("#swipeAlert").remove();
+    $("#menuAlert").remove();
 });
-$(textOut);

@@ -72,7 +72,7 @@ header {
     border-top: none;
 }
 
-#swipeAlert {
+#menuAlert {
     display: none;
 }
 
@@ -136,6 +136,10 @@ nav {
     z-index: 1000;
 }
 
+.mobile-description {
+    margin: 15px 15px 30px;
+}
+
 label input[type="radio"]:checked~.radio-text, .ui-state-disabled {
     text-decoration: line-through;
     filter: invert(100%);
@@ -194,6 +198,9 @@ ul {
 }
 
 @media screen and (min-width:500px) {
+    .mobile-description {
+        display: none;
+    }
     .overlay {
         display: inherit;
     }
