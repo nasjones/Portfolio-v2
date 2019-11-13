@@ -37,6 +37,7 @@ header {
 #nameIntro {
     display: block;
     font-size: larger;
+    margin-bottom: 10px;
 }
 
 #banner-pic {
@@ -197,6 +198,14 @@ ul {
     width: 50px;
 }
 
+.workLinks {
+    display: inline-block;
+}
+
+.workLinks li {
+    text-align: left;
+}
+
 @media screen and (min-width:500px) {
     .mobile-description {
         display: none;
@@ -303,6 +312,14 @@ ul {
         background: linear-gradient(to top, transparent, 70%, black);
         cursor: pointer;
         opacity: 100;
+    }
+}
+
+@media screen and (min-width:830px) {
+    #bigPhoto {
+        background: url('photo-banner-2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 
