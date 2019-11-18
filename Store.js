@@ -11,7 +11,7 @@ let workHtml = `<article id="display1" class="displayed">
         <h2>My Work</h2>
         <section class="work" id="item-1">
             <h3>FullMetal quiz</h3>
-            <a href="https://nasjones.github.io/quiz-app/" target="_blank" class="nonClick" alt="quiz screen cap">
+            <a href="https://nasjones.github.io/quiz-app/" target="_blank" class="nonClick">
             <div class="content" id="quiz" style="background-image: url('quiz-app-cap.png');">
             </div>
             </a>
