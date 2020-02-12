@@ -25,6 +25,25 @@ let workHtml = `<article id="display1" class="displayed">
                 </li>
              </ul>
         </section>
+        <hr>
+            <section class="work" id="item-2">
+                <h3>Crudhub</h3>
+
+                <div class="content" id="quiz" style="background-image: url('Crudhub.png');">
+                </div>
+
+                <p class="body-text">This is a webapp that takes the users food inquiry and returns recipes as well as
+                    restaurants that that offer that food within half a mile of them using the Edamam api and Google
+                    Places api. This project showcases my skills in Javascript/Jquery/CSS/HTML.</p>
+                <ul class="workLinks">
+                    <li>live- <a href="https://nasjones.github.io/Crudhub/" target="_blank" class="nonClick">Use
+                            Crudhub.</a>
+                    </li>
+                    <li>repo- <a href="https://github.com/nasjones/Crudhub" target="_blank" class="nonClick">Checkout
+                            the files.</a>
+                    </li>
+                </ul>
+            </section>
     </article>`;
 
 let moreHtml = `<article id="display3" class="displayed">
