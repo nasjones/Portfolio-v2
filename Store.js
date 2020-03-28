@@ -32,9 +32,7 @@ let workHtml = `<article id="display1" class="displayed">
                 <div class="content" id="quiz" style="background-image: url('Crudhub.png');">
                 </div>
 
-                <p class="body-text">This is a webapp that takes the users food inquiry and returns recipes as well as
-                    restaurants that that offer that food within half a mile of them using the Edamam api and Google
-                    Places api. This project showcases my skills in Javascript/Jquery/CSS/HTML.</p>
+                <p class="body-text">This is a webapp that takes the users food inquiry and returns recipes as well as restaurants that offer that food within half a mile of them, using the Edamam api and Google Places api. This project showcases my skills in Javascript/Jquery/CSS/HTML.</p>
                 <ul class="workLinks">
                     <li>live- <a href="https://nasjones.github.io/Crudhub/" target="_blank" class="nonClick">Use
                             Crudhub.</a>
