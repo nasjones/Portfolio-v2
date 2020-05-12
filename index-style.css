@@ -135,7 +135,7 @@ nav {
     margin: 15px 15px 30px;
 }
 
-label input[type="radio"]:checked~.radio-text, .ui-state-disabled {
+label input[type="radio"]:checked~.radio-text {
     text-decoration: underline;
     filter: invert(100%);
 }
