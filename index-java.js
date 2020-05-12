@@ -44,9 +44,6 @@ $("input[type='radio']").click(function () {
     }
     var radioId = $("input[name='display']:checked").attr('id');
     if (radioId == 'workRad') {
-        $('#bioRad').removeAttr("disabled");
-        $('#moreRad').removeAttr("disabled");
-        $('#workRad').attr("disabled", "true");
         $('#stage').children().animate({
             left: '-150%'
         }, 500); setTimeout(function () {
@@ -58,9 +55,6 @@ $("input[type='radio']").click(function () {
         }, 800);
     }
     else if (radioId == 'moreRad') {
-        $('#bioRad').removeAttr("disabled");
-        $('#moreRad').attr("disabled", "true");
-        $('#workRad').removeAttr("disabled");
         $('#stage').children().animate({
             left: '-150%'
         }, 500); setTimeout(function () {
@@ -72,9 +66,6 @@ $("input[type='radio']").click(function () {
         }, 800);
     }
     else {
-        $('#bioRad').attr("disabled", "true");
-        $('#moreRad').removeAttr("disabled");
-        $('#workRad').removeAttr("disabled");
         $('#stage').children().animate({
             left: '-150%'
         }, 500); setTimeout(function () {

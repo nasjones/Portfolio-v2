@@ -46,7 +46,7 @@ let workHtml = `<article id="display1" class="displayed">
             <section class="work" id="item-3">
                 <h3>Showtunes</h3>
                 <a href="https://showtunes-app.now.sh/" target="_blank" class="nonClick">
-                    <div class="content" id="quiz" style="background-image: url('Crudhub.png');">
+                    <div class="content" id="quiz" style="background-image: url('Showtunes.png');">
                     </div>
                 </a>
                 <p class="body-text">This app allows users to submit a genre and runtime the app then takes this and
