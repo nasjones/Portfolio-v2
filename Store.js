@@ -42,6 +42,28 @@ let workHtml = `<article id="display1" class="displayed">
                     </li>
                 </ul>
             </section>
+            <hr>
+            <section class="work" id="item-3">
+                <h3>Showtunes</h3>
+                <a href="https://showtunes-app.now.sh/" target="_blank" class="nonClick">
+                    <div class="content" id="quiz" style="background-image: url('Crudhub.png');">
+                    </div>
+                </a>
+                <p class="body-text">This app allows users to submit a genre and runtime the app then takes this and
+                    makes a call to the Spotify api and
+                    creates a playlist with songs whose total runtime is approximately the same length as specified.
+                    This project showcases my skills in
+                    Javascript/CSS/HTML/React/Node/PostgreSQL.</p>
+                <ul class="workLinks">
+                    <li>live- <a href="https://showtunes-app.now.sh/" target="_blank" class="nonClick">Use
+                            Showtunes.</a>
+                    </li>
+                    <li>repo- <a href="https://github.com/nasjones/playlist-client" target="_blank"
+                            class="nonClick">Checkout
+                            the files.</a>
+                    </li>
+                </ul>
+            </section>
     </article>`;
 
 let moreHtml = `<article id="display3" class="displayed">
