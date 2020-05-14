@@ -12,7 +12,7 @@ let workHtml = `<article id="display1" class="displayed">
         <section class="work" id="item-1">
             <h3>FullMetal quiz</h3>
             <a href="https://nasjones.github.io/quiz-app/" target="_blank" class="nonClick">
-            <div class="content" id="quiz" style="background-image: url('quiz-app-cap.png');">
+            <div class="content" style="background-image: url('quiz-app-cap.png');">
             </div>
             </a>
             <p class="body-text">This is a quiz that I designed based on the tv-show FullMetal Alchemist. 
@@ -29,7 +29,7 @@ let workHtml = `<article id="display1" class="displayed">
             <section class="work" id="item-2">
                 <h3>Crudhub</h3>
 
-                <div class="content" id="quiz" style="background-image: url('Crudhub.png');">
+                <div class="content" style="background-image: url('Crudhub.png');">
                 </div>
 
                 <p class="body-text">This is a webapp that takes the users food inquiry and returns recipes as well as restaurants that offer that food within half a mile of them, using the Edamam api and Google Places api. This project showcases my skills in Javascript/Jquery/CSS/HTML.</p>
@@ -46,7 +46,7 @@ let workHtml = `<article id="display1" class="displayed">
             <section class="work" id="item-3">
                 <h3>Showtunes</h3>
                 <a href="https://showtunes-app.now.sh/" target="_blank" class="nonClick">
-                    <div class="content" id="quiz" style="background-image: url('Showtunes.png');">
+                    <div class="content" style="background-image: url('Showtunes.png');">
                     </div>
                 </a>
                 <p class="body-text">This app allows users to submit a genre and runtime the app then takes this and
