@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Karla&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata%7CKarla&display=swap" rel="stylesheet">
     <link href="index-style.css" rel="stylesheet" type="text/css" />
     <link rel="icon" href="personal-favicon.png">
 
@@ -19,93 +19,178 @@
             <h1><span id="nameIntro">Hello, I'm Nassir.</span> I'm a web developer and recent graduate of Thinkful's
                 Engineering flex program.</h1>
         </article>
-
     </header>
 
-    <nav>
+    <nav id="myNav">
         <a class="icon" onclick="hamMenu()">
             <img id="hamburger" src="hamburger-icon.png" alt="hamburger-icon">
         </a>
         <div id="nav-text">
-            <label><input type="radio" id="workRad" class="nav-link" name="display" checked>
-                <span class="radio-text">Work</span></label>
-            <label><input type="radio" id="bioRad" class="nav-link" name="display"> <span class="radio-text">About Me
-                </span></label>
 
-            <label><input type="radio" id="moreRad" class="nav-link" name="display">
-                <span class="radio-text">Extra</span></label>
+            <button id="workRad" class="nav-link radio-text" onclick="myScroll(1)">Work</button>
+
+            <button id="bioRad" class="nav-link" onclick="myScroll(2)">About Me</button>
+
+            <button id="moreRad" class="nav-link" onclick="myScroll(3)">Extra</button>
 
         </div>
     </nav>
-    <div id="menuAlert"><span>Use the menu to explore!</span> <button id="closeAlert">x</button></div>
+
+    <div id="menuAlert">
+        <span>Use the menu to explore!</span> <button id="closeAlert" onclick="closeAlert()">x</button>
+    </div>
+
     <main id="stage">
-        <article id="display1" class="displayed">
+        <section id="display1" class="displayed">
             <h2>My Work</h2>
-            <section class="work" id="item-1">
-                <h3>FullMetal quiz</h3>
-                <a href="https://nasjones.github.io/quiz-app/" target="_blank" class="nonClick">
-                    <div class="content" style="background-image: url('quiz-app-cap.png');">
-                    </div>
-                </a>
-                <p class="body-text">This is a quiz that I designed based on the tv-show FullMetal Alchemist.
-                    I designed the quiz so that the questions and choices for the questions appear in a random order so
-                    that the
-                    quiz isn't the same every time.
-                    This project showcases my skills in Javascript/ Jquery/ CSS/ HTML.</p>
-                <ul>
-                    <li>live- <a href="https://nasjones.github.io/quiz-app/" target="_blank" class="nonClick">Take the
-                            quiz!</a>
-                    </li>
-                    <li>repo- <a href="https://github.com/nasjones/quiz-app" target="_blank" class="nonClick">Checkout
-                            the
-                            files.</a>
-                    </li>
-                </ul>
-            </section>
+            <article class="work" id="item-1">
+                <div class="work-photo">
+                    <a href="https://nasjones.github.io/quiz-app/" target="_blank" class="nonClick">
+                        <div class="content" style="background-image: url('quiz-app-cap.png');">
+                        </div>
+                    </a>
+                </div>
+                <div class="work-sum">
+                    <h3>FullMetal quiz</h3>
+                    <p class="body-text">A quiz I designed based on the TV show FullMetal Alchemist.
+                        The quiz was built so that the questions and answer choices appear in a random order making the
+                        quiz
+                        different every time.
+                        This project showcases my skills in Javascript/ Jquery/ CSS/ HTML.</p>
+                    <ul>
+                        <li>live- <a href="https://nasjones.github.io/quiz-app/" target="_blank" class="nonClick">Take
+                                the
+                                quiz</a>
+                        </li>
+                        <li>repo- <a href="https://github.com/nasjones/quiz-app" target="_blank" class="nonClick">Check
+                                out
+                                the
+                                files</a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
             <hr>
-            <section class="work" id="item-2">
-                <h3>Crudhub</h3>
-                <a href="https://nasjones.github.io/Crudhub/" target="_blank" class="nonClick">
-                    <div class="content" style="background-image: url('Crudhub.png');">
-                    </div>
-                </a>
-                <p class="body-text">This is a webapp that takes the users food inquiry and returns recipes as well as
-                    restaurants that offer that food within half a mile of them using the Edamam api and Google
-                    Places api. This project showcases my skills in Javascript/ Jquery/ CSS/ HTML.</p>
-                <ul class="workLinks">
-                    <li>live- <a href="https://nasjones.github.io/Crudhub/" target="_blank" class="nonClick">Use
-                            Crudhub.</a>
-                    </li>
-                    <li>repo- <a href="https://github.com/nasjones/Crudhub" target="_blank" class="nonClick">Checkout
-                            the files.</a>
-                    </li>
-                </ul>
-            </section>
+            <article class="work" id="item-2">
+                <div class="work-photo">
+                    <a href="https://nasjones.github.io/Crudhub/" target="_blank" class="nonClick">
+                        <div class="content" style="background-image: url('Crudhub.png');">
+                        </div>
+                    </a>
+                </div>
+                <div class="work-sum">
+                    <h3>Crudhub</h3>
+                    <p class="body-text">A webapp that takes a user's food inquiry and returns matching recipes and
+                        restaurants within half a mile of them using the Edamam API and Google
+                        Places API. This project showcases my skills in Javascript/ Jquery/ CSS/ HTML.</p>
+                    <ul class="workLinks">
+                        <li>live- <a href="https://nasjones.github.io/Crudhub/" target="_blank" class="nonClick">Use
+                                Crudhub</a>
+                        </li>
+                        <li>repo- <a href="https://github.com/nasjones/Crudhub" target="_blank" class="nonClick">Check
+                                out
+                                the files</a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
             <hr>
-            <section class="work" id="item-3">
-                <h3>Showtunes</h3>
-                <a href="https://showtunes-app.now.sh/" target="_blank" class="nonClick">
-                    <div class="content" style="background-image: url('Showtunes.png');">
+            <article class="work" id="item-3">
+                <div class="work-photo">
+                    <a href="https://showtunes-app.now.sh/" target="_blank" class="nonClick">
+                        <div class="content" style="background-image: url('Showtunes.png');">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="work-sum">
+                    <h3>Showtunes</h3>
+                    <p class="body-text">This app allows users to create playlists and discover new music. Users choose
+                        a genre and input their ideal playlist length and the app makes a call to the Spotify API and
+                        creates a playlist! This project showcases my skills in
+                        Javascript/ CSS/ HTML/ React/ Node/ PostgreSQL.</p>
+                    <ul class="workLinks">
+                        <li>live- <a href="https://showtunes-app.now.sh/" target="_blank" class="nonClick">Use
+                                Showtunes</a>
+                        </li>
+                        <li>repo- <a href="https://github.com/nasjones/playlist-client" target="_blank"
+                                class="nonClick">Check out
+                                the files</a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+        <hr id="hr2" />
+        <section id="display2" class="displayed">
+            <h2>About Me</h2>
+            <p id="bio" class="body-text">I was born and raised in Long Island New York. I’m a web developer and foodie
+                whose passion for development came from my love of critical thinking and problem-solving. When I'm not
+                playing with some algorithm on my computer I'm playing video games, eating with friends, or reading. My
+                favorite genre is science-fiction and I hope to be a part of the development that brings forth the
+                future I love reading about.
+            </p>
+        </section>
+        <hr id="hr3" />
+        <section id="display3" class="displayed">
+            <h2>A few of my favorite things:</h2>
+            <ul>
+                <h3>My favorite restaurant</h3>
+                <div class="content" style="background-image: url('lukes-lobster.jpeg');">
+                    <div class="overlay">
+                        <li>
+                            <h4>Lukes-Lobster</h4>
+                            <p>The best seafood rolls in New York!</p>
+                        </li>
                     </div>
-                </a>
-                <p class="body-text">This app allows users to submit a genre and runtime the app then takes this and
-                    makes a call to the Spotify api and
-                    creates a playlist with songs whose total runtime is approximately the same length as specified.
-                    This project showcases my skills in
-                    Javascript/ CSS/ HTML/ React/ Node/ PostgreSQL.</p>
-                <ul class="workLinks">
-                    <li>live- <a href="https://showtunes-app.now.sh/" target="_blank" class="nonClick">Use
-                            Showtunes.</a>
-                    </li>
-                    <li>repo- <a href="https://github.com/nasjones/playlist-client" target="_blank"
-                            class="nonClick">Checkout
-                            the files.</a>
-                    </li>
-                </ul>
-            </section>
-        </article>
+                </div>
+                <div class="mobile-description">
+                    <p>The best seafood rolls in New York!</p>
+                </div>
+                <hr>
+                <h3>My favorite video game</h3>
+                <div class="content" style="background-image: url('KH.jpg');">
+                    <div class="overlay">
+                        <li>
+                            <h4>Kingdom-Hearts</h4>
+                            <p>The greatest video game of all time!</p>
+                        </li>
+                    </div>
+                </div>
+                <div class="mobile-description">
+                    <p>The greatest video game of all time!</p>
+                </div>
+                <hr>
+                <h3>My favorite Book</h3>
+                <div class="content" style="background-image: url('POG.jpg');">
+                    <div class="overlay">
+                        <li>
+                            <h4>Player Of Games</h4>
+                            <p>An incredible novel by Iain M. Banks with an intricate and beautiful story.</p>
+                        </li>
+                    </div>
+                </div>
+                <div class="mobile-description">
+                    <p>An incredible novel by Iain M. Banks with an intricate and beautiful story.</p>
+                </div>
+                <hr>
+                <h3>My favorite show</h3>
+                <div class="content" style="background-image: url('Stein.jpg');">
+                    <div class="overlay">
+                        <li>
+                            <h4>Steins;Gate</h4>
+                            <p>An amazing story with art, a great plot, and relatable characters.</p>
+                        </li>
+                    </div>
+                </div>
+                <div class="mobile-description">
+                    <p>An amazing story with beautiful art, a wonderful story, and great characters.</p>
+                </div>
+            </ul>
+
+        </section>
     </main>
-    <hr>
+    <hr />
     <footer id="contact-info">
         <h4>Contact Me:</h4>
         <a href="mailto:nassircjones@gmail.com"><img class="contact-img" src="email-favicon.png"
@@ -117,7 +202,6 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="index-java.js"></script>
-    <script src="Store.js"></script>
 </body>
 
 </html>

@@ -6,6 +6,7 @@ body {
     text-align: center;
     margin: 0px;
     padding: 0px;
+    position: relative;
 }
 
 .ui-loader {
@@ -62,7 +63,7 @@ header {
     position: absolute;
     text-align: left;
     background-color: #c196ae;
-    margin-top: 25px;
+    margin-top: 23px;
     top: 10px;
     border-top: none;
 }
@@ -101,14 +102,7 @@ input {
     visibility: hidden;
 }
 
-label {
-    display: block;
-    text-align: left;
-    margin-left: 10px;
-    line-height: 10px;
-}
-
-label:hover {
+.nav-link:hover {
     cursor: pointer;
     filter: invert(100%);
 }
@@ -140,13 +134,18 @@ label input[type="radio"]:checked~.radio-text {
     filter: invert(100%);
 }
 
-.nav-link, .ui-radio {
+.nav-link {
     padding: 10px;
     text-decoration: none;
     font-size: 17px;
     display: block;
     width: fit-content;
     text-align: center;
+    background: none;
+    color: inherit;
+    border: none;
+    cursor: pointer;
+    outline: inherit;
 }
 
 .nav-link:hover {
@@ -159,19 +158,11 @@ ul {
     padding-inline-start: 0px;
 }
 
-.displayed {
-    position: relative;
-}
-
 .body-text {
     padding: 0px 40px;
     color: #5C1A1B;
-}
-
-.work-photo {
-    border: 1px solid black;
-    height: 300px;
-    box-shadow: 7px 2px 15px black;
+    text-align: left;
+    font-size: 20px;
 }
 
 .content {
@@ -200,6 +191,24 @@ ul {
     text-align: left;
 }
 
+#myNav.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#display1 {
+    scroll-margin-top: 3.5em;
+}
+
+#display2 {
+    scroll-margin-top: 30px;
+}
+
+#display3 {
+    scroll-margin-top: 4.8em;
+}
+
 @media screen and (min-width:500px) {
     .mobile-description {
         display: none;
@@ -216,7 +225,7 @@ ul {
         color: rgb(153, 81, 81);
     }
     #bio {
-        font-size: 30px;
+        font-size: 20px;
         line-height: 40px;
         margin-bottom: 4.1%;
     }
@@ -244,18 +253,12 @@ ul {
     }
     #nav-text {
         display: grid;
-        grid-template-areas: "about work more";
+        grid-template-areas: "work about more";
         position: relative;
         border: none;
         top: 0px;
         margin-top: 0px;
-    }
-    label {
-        text-align: center;
-        vertical-align: middle;
-        margin-top: -5px;
-        margin-bottom: 10px;
-        font-size: 20px;
+        justify-items: center;
     }
     #bioRad {
         grid-area: about;
@@ -278,14 +281,6 @@ ul {
     }
     p {
         margin: 30px 50px;
-    }
-    .work-photo {
-        height: 450px;
-    }
-    .work-photo:hover {
-        background-image: url("quiz-app.gif");
-        background-repeat: no-repeat;
-        opacity: 100%;
     }
     .content {
         width: inherit;
@@ -310,9 +305,21 @@ ul {
 }
 
 @media screen and (min-width:830px) {
+    .work {
+        display: flex;
+    }
+    .work-photo {
+        flex: 2;
+    }
+    .work-sum {
+        flex: 1
+    }
     #bigPhoto {
         background: url('photo-banner-2.jpg');
         background-repeat: no-repeat;
         background-size: cover;
+    }
+    .body-text {
+        padding: 0px;
     }
 }
