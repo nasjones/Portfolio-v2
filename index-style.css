@@ -322,4 +322,7 @@ ul {
     .body-text {
         padding: 0px;
     }
+    .evenWork {
+        flex-direction: row-reverse;
+    }
 }
