@@ -4,8 +4,8 @@ body {
     color: #5C1A1B;
     line-height: 22px;
     text-align: center;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     position: relative;
 }
 
@@ -98,19 +98,10 @@ header {
     }
 }
 
-input {
-    visibility: hidden;
-}
-
-.nav-link:hover {
-    cursor: pointer;
-    filter: invert(100%);
-}
-
 #stage {
     position: relative;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     width: 100%;
     height: auto;
     overflow: hidden;
@@ -129,37 +120,33 @@ nav {
     margin: 15px 15px 30px;
 }
 
-label input[type="radio"]:checked~.radio-text {
-    text-decoration: underline;
-    filter: invert(100%);
-}
-
 .nav-link {
     padding: 10px;
     text-decoration: none;
     font-size: 17px;
     display: block;
-    width: fit-content;
     text-align: center;
     background: none;
     color: inherit;
     border: none;
     cursor: pointer;
     outline: inherit;
+    width: 100%;
 }
 
 .nav-link:hover {
     cursor: pointer;
     color: black;
+    filter: invert(100%);
 }
 
 ul {
     list-style-type: none;
-    padding-inline-start: 0px;
+    padding-inline-start: 0;
 }
 
 .body-text {
-    padding: 0px 40px;
+    padding: 0 40px;
     color: #5C1A1B;
     text-align: left;
     font-size: 20px;
@@ -256,9 +243,12 @@ ul {
         grid-template-areas: "work about more";
         position: relative;
         border: none;
-        top: 0px;
-        margin-top: 0px;
+        top: 0;
+        margin-top: 0;
         justify-items: center;
+    }
+    .nav-link:hover {
+        background: linear-gradient(to top, rgb(187, 187, 187), rgba(0, 128, 0, 0));
     }
     #bioRad {
         grid-area: about;
@@ -271,9 +261,6 @@ ul {
     }
     h1 {
         line-height: 40px;
-    }
-    h2 {
-        margin-block-end: 0;
     }
     main {
         text-align: center;
@@ -320,7 +307,7 @@ ul {
         background-size: cover;
     }
     .body-text {
-        padding: 0px;
+        padding: 0;
     }
     .evenWork {
         flex-direction: row-reverse;
