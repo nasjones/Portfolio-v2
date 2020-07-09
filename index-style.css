@@ -25,6 +25,7 @@ header {
 .headIntro {
     font-style: italic;
     font-family: 'Arvo', serif;
+    font-size: 1.9em;
 }
 
 .orangeText {
@@ -40,7 +41,7 @@ header {
     display: none;
 }
 
-#display2 {
+.displayed {
     text-align: center;
 }
 
@@ -184,7 +185,7 @@ a:hover {
     }
 }
 
-@media screen and (min-width:850px) {
+@media screen and (min-width:885px) {
     header {
         margin-right: 38%;
     }
@@ -207,7 +208,7 @@ a:hover {
     }
 }
 
-@media screen and (min-width:900px) {
+@media screen and (min-width:1166px) {
     .headIntro {
         font-size: 4rem;
     }
