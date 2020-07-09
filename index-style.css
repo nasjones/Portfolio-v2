@@ -1,49 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital@1&display=swap');
+html {
+    height: 100%;
+}
+
 body {
-    font-family: 'Inconsolata', monospace;
-    background-color: #AED4E6;
-    color: #5C1A1B;
-    line-height: 22px;
-    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1e1f20;
+    color: white;
     margin: 0;
-    padding: 0;
-    position: relative;
-}
-
-.ui-loader {
-    display: none;
-}
-
-h2 {
-    color: #b54458;
-    font-weight: bolder;
+    display: table;
+    font-size: 20px;
 }
 
 header {
-    position: relative;
-    background-position: 20% 50%;
-    background-repeat: no-repeat;
+    margin: 10px;
 }
 
-#bigPhoto {
-    height: 422px;
-    width: auto;
-    overflow: hidden;
-    background: url('photo-banner.jpg');
-    background-repeat: no-repeat;
-    background-position-x: left;
-    background-position: 30%;
-    grid-area: photo;
+#headText {
+    text-align: left;
 }
 
-#nameIntro {
-    display: block;
-    font-size: larger;
-    margin-bottom: 10px;
+.headIntro {
+    font-style: italic;
+    font-family: 'Arvo', serif;
 }
 
-#banner-pic {
-    min-width: 100%;
-    height: 450px;
+.orangeText {
+    color: #FF6600;
+}
+
+.topContact {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    grid-gap: 10px;
+    font-size: x-large;
+    display: none;
+}
+
+#display2 {
+    text-align: center;
+}
+
+#mePic {
+    width: 85%;
+}
+
+.body-text {
+    text-align: left;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+a:hover {
+    color: #FF6600;
+}
+
+#display3>h2 {
+    text-align: right;
+}
+
+#navText {
+    display: none;
+}
+
+.nav-link {
+    position: absolute;
+}
+
+#nav-text>label {
+    margin: 5px;
+}
+
+#navText>label:hover {
+    cursor: pointer;
+}
+
+.radArrow {
+    color: #FF6600;
+    margin-left: 20px;
+    padding-top: 30px;
+    display: inline-block;
+}
+
+#stage {
+    margin: 10px;
+}
+
+.navRad {
+    opacity: 0;
+    position: absolute;
 }
 
 #hamburger {
@@ -51,105 +103,52 @@ header {
     margin-top: 5px;
     margin-left: 5px;
     display: block;
-    position: absolute;
     left: 0;
     top: 0;
 }
 
-#nav-text {
-    padding: 0 5px 5px;
-    margin-block-start: 0;
-    display: none;
-    position: absolute;
-    text-align: left;
-    background-color: #c196ae;
-    margin-top: 23px;
-    top: 10px;
-    border-top: none;
+.navRad:checked+.radArrow {
+    transform: rotate(180deg);
+    color: aqua;
 }
 
-#menuAlert {
-    display: none;
-}
-
-.overlay {
-    display: none;
-}
-
-@media only screen and (max-width:480px) {
-    #menuAlert {
-        padding: 2px;
-        margin-top: 5px;
-        display: block;
-        background-color: lightgray;
-    }
-    #closeAlert {
-        height: 20px;
-        display: inline-block;
-        padding: 0;
-        border: 1px solid rgb(245, 131, 150);
-        border-radius: 2px;
-        font: inherit;
-        color: inherit;
-        background-color: transparent;
-        margin-left: 10px;
-        box-shadow: 2px 2px 2px black;
-        line-height: 50%;
-    }
-}
-
-#stage {
-    position: relative;
-    margin: 0;
-    padding: 0;
+#contact-info {
+    padding-bottom: 10px;
+    color: #FF6600;
     width: 100%;
-    height: auto;
-    overflow: hidden;
-}
-
-nav {
-    background-color: #c196ae;
-    padding: 5px;
-    min-height: 25px;
-    position: relative;
-    font-size: 15px;
-    z-index: 1000;
-}
-
-.mobile-description {
-    margin: 15px 15px 30px;
-}
-
-.nav-link {
-    padding: 10px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
     text-align: center;
-    background: none;
-    color: inherit;
-    border: none;
-    cursor: pointer;
-    outline: inherit;
-    width: 100%;
 }
 
-.nav-link:hover {
-    cursor: pointer;
-    color: black;
-    filter: invert(100%);
+.listWrap {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-ul {
-    list-style-type: none;
-    padding-inline-start: 0;
+.listWrap>li {
+    flex-grow: 1;
+    width: 33%;
+    margin: 10px;
 }
 
-.body-text {
-    padding: 0 40px;
-    color: #5C1A1B;
-    text-align: left;
-    font-size: 20px;
+.ital {
+    font-style: italic;
+}
+
+.resWrap {
+    margin: 10px;
+    border: 1px solid white;
+    padding: 8px;
+}
+
+#footImages {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-img {
+    height: 50px;
+    width: 50px;
 }
 
 .content {
@@ -158,140 +157,34 @@ ul {
     background-position-x: center;
 }
 
-#contact-info {
-    top: 90%;
-    padding-bottom: 10px;
-    background-color: #c196ae;
-    margin-top: -21px;
-}
-
-.contact-img {
-    height: 50px;
-    width: 50px;
-}
-
-.workLinks {
-    display: inline-block;
-}
-
-.workLinks li {
-    text-align: left;
-}
-
-#myNav.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-#display1 {
-    scroll-margin-top: 3.5em;
-}
-
-#display2 {
-    scroll-margin-top: 30px;
-}
-
-#display3 {
-    scroll-margin-top: 4.8em;
-}
-
-@media screen and (min-width:500px) {
-    .mobile-description {
-        display: none;
-    }
-    .overlay {
-        display: inherit;
-    }
+@media screen and (min-width:768px) {
     header {
-        display: grid;
-        grid-template-columns: 50% 1fr;
-        grid-template-areas: "text photo";
+        margin: 10px 20% 10px 10px;
     }
-    #first-name {
-        color: rgb(153, 81, 81);
+    #navText {
+        display: inline-grid;
+        grid-auto-flow: column;
+        grid-gap: 10px 40px;
+        font-size: 30px;
     }
-    #bio {
-        font-size: 20px;
-        line-height: 40px;
-        margin-bottom: 4.1%;
-    }
-    #bigPhoto {
-        height: 422px;
-        width: auto;
-        overflow: hidden;
-        background: url('photo-banner.jpg');
-        background-repeat: no-repeat;
-        background-position-x: left;
-        background-position: 30%;
-        grid-area: photo;
-    }
-    #header-text {
-        background-color: #AED4E6;
-        border: 1px solid black;
-        padding: 10px;
-        height: auto;
-        width: 100%;
-        position: relative;
-        grid-area: text;
-    }
-    #hamburger {
+    #menuAlert {
         display: none;
     }
-    #nav-text {
+    .headIntro {
+        font-size: 3rem;
+    }
+    #contact-info {
+        display: none;
+    }
+    .topContact {
         display: grid;
-        grid-template-areas: "work about more";
-        position: relative;
-        border: none;
-        top: 0;
-        margin-top: 0;
-        justify-items: center;
-    }
-    .nav-link:hover {
-        background: linear-gradient(to top, rgb(187, 187, 187), rgba(0, 128, 0, 0));
-    }
-    #bioRad {
-        grid-area: about;
-    }
-    #workRad {
-        grid-area: work;
-    }
-    #moreRad {
-        grid-area: more;
-    }
-    h1 {
-        line-height: 40px;
-    }
-    main {
-        text-align: center;
-        display: inline-block;
-    }
-    p {
-        margin: 30px 50px;
-    }
-    .content {
-        width: inherit;
-        height: 400px;
-        background-repeat: no-repeat;
-        margin: 20px;
-        background-size: cover;
-        box-shadow: 7px 2px 15px black;
-    }
-    .overlay {
-        width: inherit;
-        height: inherit;
-        opacity: 0;
-        color: #AED4E6;
-    }
-    .overlay:hover {
-        display: inherit;
-        background: linear-gradient(to top, transparent, 70%, black);
-        cursor: pointer;
-        opacity: 100;
     }
 }
 
-@media screen and (min-width:830px) {
+@media screen and (min-width:850px) {
+    header {
+        margin-right: 38%;
+    }
     .work {
         display: flex;
     }
@@ -299,17 +192,17 @@ ul {
         flex: 2;
     }
     .work-sum {
-        flex: 1
-    }
-    #bigPhoto {
-        background: url('photo-banner-2.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .body-text {
-        padding: 0;
+        flex: 1;
+        margin: 15px;
+        font-size: 1.4rem;
     }
     .evenWork {
         flex-direction: row-reverse;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .headIntro {
+        font-size: 4rem;
     }
 }

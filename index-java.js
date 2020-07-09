@@ -1,41 +1,21 @@
 let closed
-var $window = $(window),
-    $stickyEl = $('#myNav'),
-    elTop = $stickyEl.offset().top;
+let allDisplay = false;
+let switchDisplay = false;
 
-function hamMenu() {
-    var el = document.getElementById("nav-text");
-    if (window.innerWidth >= 500) {
-        el.style.display = "grid";
-    } else {
-        if (el.style.display === "block") {
-            el.style.display = "none";
-        } else {
-            el.style.display = "block";
-        }
+function landing() {
+
+    if (window.innerWidth > 768) {
+        $('#stage').html(workHtml);
+        allDisplay = false;
+        switchDisplay = true;
     }
-}
+    else {
+        $('#stage').html(allHtml);
+        allDisplay = true;
+        switchDisplay = false;
 
-function myScroll(id) {
-    if (!closed)
-        closeAlert()
-
-    let element = document.getElementById(`display${id}`);
-    let offset = document.getElementById("myNav").offsetHeight
-    let bodyRect = document.body.getBoundingClientRect().top;
-    let elementRect = element.getBoundingClientRect().top;
-    let elementPosition = elementRect - bodyRect;
-    let offsetPosition = elementPosition - offset;
-
-    if (window.innerWidth < 500) {
-        hamMenu()
-        offsetPosition + 20
     }
 
-    window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-    });
 }
 
 function closeAlert() {
@@ -45,14 +25,32 @@ function closeAlert() {
     closed = true
 }
 
-$window.scroll(function () {
+$("input[type='radio']").click(function () {
+    var radioId = $("input[name='navRad']:checked").attr('id');
 
-    $stickyEl.toggleClass('sticky', $window.scrollTop() >= elTop);
-
-    if ($window.scrollTop() >= elTop) {
-        $('main').css('margin-top', $stickyEl.height());
+    if (radioId == 'workRad') {
+        $('#stage').html(workHtml);
+    }
+    else if (radioId == 'resRad') {
+        $('#stage').html(resHtml);
     }
     else {
-        $('main').css('margin-top', 0);
+        $('#stage').html(bioHtml);
     }
 });
+
+$(window).on("resize", function () {
+    if (($(window).width() <= 768) && (allDisplay == false)) {
+        $('#stage').html(allHtml);
+        allDisplay = true;
+        switchDisplay = false;
+    }
+    else if (($(window).width() > 768) && (switchDisplay == false)) {
+        $('#stage').html(workHtml);
+        allDisplay = false;
+        switchDisplay = true;
+    }
+
+});
+
+landing();
