@@ -22,6 +22,10 @@ header {
     text-align: left;
 }
 
+#myNav {
+    font-family: 'Oswald', sans-serif;
+}
+
 .headIntro {
     font-style: italic;
     font-family: 'Arvo', serif;
@@ -34,7 +38,7 @@ header {
 
 .topContact {
     position: absolute;
-    top: 30px;
+    top: 60px;
     right: 50px;
     grid-gap: 10px;
     font-size: x-large;
@@ -91,7 +95,7 @@ a:hover {
 }
 
 #stage {
-    margin: 10px;
+    margin: 10px 30px;
 }
 
 .navRad {
@@ -140,6 +144,7 @@ a:hover {
     margin: 10px;
     border: 1px solid white;
     padding: 8px;
+    text-align: left;
 }
 
 #footImages {
@@ -182,6 +187,9 @@ a:hover {
     }
     body {
         padding: 25px;
+    }
+    #stage {
+        margin: 10px 10%;
     }
 }
 

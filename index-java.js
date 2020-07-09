@@ -47,7 +47,7 @@ $(window).on("resize", function () {
     }
     else if (($(window).width() > 768) && (switchDisplay == false)) {
         $('#stage').html(workHtml);
-        console.log($('#workRad'));
+        $('#workRad').prop('checked', true);
         allDisplay = false;
         switchDisplay = true;
     }
