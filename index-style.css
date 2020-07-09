@@ -179,6 +179,9 @@ a:hover {
     .topContact {
         display: grid;
     }
+    body {
+        padding: 25px;
+    }
 }
 
 @media screen and (min-width:850px) {
@@ -198,6 +201,9 @@ a:hover {
     }
     .evenWork {
         flex-direction: row-reverse;
+    }
+    .body-text {
+        font-size: 1.6rem;
     }
 }
 
