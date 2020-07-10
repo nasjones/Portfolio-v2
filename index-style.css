@@ -29,11 +29,17 @@ header {
 .headIntro {
     font-style: italic;
     font-family: 'Arvo', serif;
-    font-size: 1.9em;
+    font-size: 7vw;
+    font-weight: 100;
 }
 
 .orangeText {
     color: #FF6600;
+}
+
+.headOutro {
+    margin-right: 9vw;
+    font-size: 3.5vw;
 }
 
 .topContact {
@@ -51,6 +57,7 @@ header {
 
 #mePic {
     width: 85%;
+    box-shadow: -20px -20px #FF6600;
 }
 
 .body-text {
@@ -177,7 +184,10 @@ a:hover {
         display: none;
     }
     .headIntro {
-        font-size: 3rem;
+        font-size: 2.5rem;
+    }
+    .headOutro {
+        font-size: 25px;
     }
     #contact-info {
         display: none;
@@ -189,7 +199,7 @@ a:hover {
         padding: 25px;
     }
     #stage {
-        margin: 10px 10%;
+        margin: 10px 20% 10px 0;
     }
 }
 
@@ -212,12 +222,8 @@ a:hover {
         flex-direction: row-reverse;
     }
     .body-text {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 }
 
-@media screen and (min-width:1166px) {
-    .headIntro {
-        font-size: 4rem;
-    }
-}
+@media screen and (min-width:1166px) {}
