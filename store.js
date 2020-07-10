@@ -79,9 +79,11 @@ let workHtml = `<section id="display1" class="displayed">
 
 let bioHtml = ` <section id="display2" class="displayed">
             <span class="orangeText"><h2>About Me</h2></span>
+            <div class="body-text" id="bioWrap">
             <img src='mePic.jpg' id='mePic'>
-            <p id="bio" class="body-text">I was born and raised in Long Island New York. From as far back as I can remember I have always been in front of a computer screen. trying to figure out how to tweak something online or find a way to solve some problem of mine. I have been passionate about programming for years now, as it allows for free expression that incorporates problem solving. Web development was the perfect area of programming to explore this passion.
+            <p id="bio" >I was born and raised in Long Island New York. From as far back as I can remember I have always been in front of a computer screen. trying to figure out how to tweak something online or find a way to solve some problem of mine. I have been passionate about programming for years now, as it allows for free expression that incorporates problem solving. Web development was the perfect area of programming to explore this passion.
             </p>
+            </div>
         </section>`
 
 let resHtml = `<section id="display3" class="displayed">
@@ -231,8 +233,9 @@ let allHtml = `  <section id="display1" class="displayed">
         <hr />
         <section id="display2" class="displayed">
             <span class="orangeText"><h2>About Me</h2></span>
+            <div class="body-text">
             <img src='mePic.jpg' id='mePic'>
-            <p id="bio" class="body-text">I was born and raised in Long Island New York. From as far back as I can
+            <p id="bio">I was born and raised in Long Island New York. From as far back as I can
                 remember I
                 have always been in front of a computer screen. trying to figure out how to tweak something online or
                 find a way
@@ -242,6 +245,7 @@ let allHtml = `  <section id="display1" class="displayed">
                 explore
                 this passion.
             </p>
+            </div>
         </section>
         <hr />
         <section id="display3" class="displayed">
