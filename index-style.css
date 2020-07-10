@@ -56,9 +56,9 @@ header {
 }
 
 #mePic {
-    width: 85%;
+    width: 70%;
     box-shadow: -15px -15px #FF6600;
-    margin-left: 15px;
+    margin-left: 25px;
 }
 
 .body-text {
@@ -171,8 +171,8 @@ a:hover {
     background-position-x: center;
 }
 
-#bioWrap {
-    display: flex;
+.bioWrap>p {
+    text-align: left;
 }
 
 @media screen and (min-width:768px) {
@@ -186,9 +186,10 @@ a:hover {
         font-size: 30px;
     }
     #mePic {
+        width: 45%;
         margin-right: 30px;
         box-shadow: -20px -20px #FF6600;
-        margin-left: 20px;
+        margin-left: 30px;
     }
     #menuAlert {
         display: none;
@@ -214,22 +215,24 @@ a:hover {
 }
 
 @media screen and (min-width:885px) {
+    .bioWrap {
+        text-align: left;
+        display: flex;
+    }
     header {
         margin-right: 38%;
     }
     .work {
         display: flex;
     }
-    .work-photo {
-        flex: 2;
+    .content {
+        width: 35vw;
     }
     .work-sum {
         flex: 1;
-        margin: 15px;
+        margin-left: 20px;
         font-size: 1.4rem;
-    }
-    .evenWork {
-        flex-direction: row-reverse;
+        text-align: left;
     }
     .body-text {
         font-size: 1.4rem;
