@@ -1,5 +1,4 @@
 let workHtml = `<section id="display1" class="displayed">
-            <span class="orangeText"><h2>My Work</h2></span>
             <article class="work" id="item-1">
                 <div class="work-photo">
                     <a href="https://quizbowl-opal.vercel.app/" target="_blank" class="nonClick">
@@ -77,8 +76,7 @@ let workHtml = `<section id="display1" class="displayed">
             </article>
         </section>`
 
-let bioHtml = ` <section id="display2" class="displayed">
-            <span class="orangeText"><h2>About Me</h2></span>
+let bioHtml = `<section id="display2" class="displayed">
             <div class="bioWrap">
             <img src='mePic.jpg' id='mePic'>
             <p id="bio" >I was born and raised in Long Island New York. From as far back as I can remember I have always been in front of a computer screen. trying to figure out how to tweak something online or find a way to solve some problem of mine. I have been passionate about programming for years now, as it allows for free expression that incorporates problem solving. Web development was the perfect area of programming to explore this passion.
@@ -87,7 +85,6 @@ let bioHtml = ` <section id="display2" class="displayed">
         </section>`
 
 let resHtml = `<section id="display3" class="displayed">
-          <span class="orangeText"><h2>Resume</h2></span>
             <div class="resWrap">
                 <h3>Skills</h3>
                 <h4>Front-end</h4>
@@ -151,7 +148,7 @@ let resHtml = `<section id="display3" class="displayed">
             </div>
         </section>`
 
-let allHtml = `  <section id="display1" class="displayed">
+let allHtml = `<section id="display1" class="displayed">
             <span class="orangeText"><h2>My Work</h2></span>
             <article class="work" id="item-1">
                 <div class="work-photo">

@@ -26,9 +26,12 @@ header {
     font-family: 'Oswald', sans-serif;
 }
 
+h1, h2, h3, h4 {
+    font-family: 'Arvo', serif;
+}
+
 .headIntro {
     font-style: italic;
-    font-family: 'Arvo', serif;
     font-size: 7vw;
     font-weight: 100;
 }
@@ -51,8 +54,8 @@ header {
     display: none;
 }
 
-.displayed {
-    text-align: center;
+section {
+    margin: 70px 0;
 }
 
 #mePic {
@@ -198,6 +201,9 @@ a:hover {
     #stage {
         margin: 10px 20% 10px 0;
     }
+    .displayed {
+        margin-top: 60px;
+    }
 }
 
 @media screen and (min-width:885px) {
@@ -213,6 +219,7 @@ a:hover {
     }
     .content {
         width: 35vw;
+        height: 40vh;
     }
     .work-sum {
         flex: 1;
@@ -225,6 +232,9 @@ a:hover {
     }
     .topContact {
         font-size: 1.8em;
+    }
+    .displayed {
+        margin-top: 100px;
     }
 }
 

@@ -4,8 +4,7 @@ let switchDisplay = false;
 
 function landing() {
 
-    if (window.innerWidth > 768) {
-        $('#stage').html(workHtml);
+    if (window.innerWidth >= 768) {
         allDisplay = false;
         switchDisplay = true;
     }
@@ -40,12 +39,12 @@ $("input[type='radio']").click(function () {
 });
 
 $(window).on("resize", function () {
-    if (($(window).width() <= 768) && (allDisplay == false)) {
+    if (($(window).width() < 768) && (allDisplay == false)) {
         $('#stage').html(allHtml);
         allDisplay = true;
         switchDisplay = false;
     }
-    else if (($(window).width() > 768) && (switchDisplay == false)) {
+    else if (($(window).width() >= 768) && (switchDisplay == false)) {
         $('#stage').html(workHtml);
         $('#workRad').prop('checked', true);
         allDisplay = false;
