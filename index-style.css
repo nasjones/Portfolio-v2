@@ -125,6 +125,7 @@ a:hover {
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    width: 70%;
 }
 
 .listWrap>li {

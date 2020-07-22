@@ -105,10 +105,11 @@ let resHtml = `<section id="display3" class="displayed">
                     <li>PostgreSQL</li>
                 </ul>
                 <h4>Other technologies</h4>
-                <ul class="listWrap">
+               <ul class="listWrap">
                     <li>C</li>
                     <li>Java</li>
                     <li>Assembly</li>
+                    <li>Python</li>
                     <li>NPM</li>
                     <li>Mocha</li>
                     <li>Chai</li>
@@ -120,9 +121,6 @@ let resHtml = `<section id="display3" class="displayed">
                     <li>GitHub</li>
                     <li>Heroku</li>
                     <li>Enzyme</li>
-                </ul>
-                <h4>Additional Skills</h4>
-                <ul class="listWrap">
                     <li>RESTful APIs</li>
                     <li>Unit testing</li>
                     <li>Data structures</li>
@@ -271,6 +269,7 @@ let allHtml = `<section id="display1" class="displayed">
                     <li>C</li>
                     <li>Java</li>
                     <li>Assembly</li>
+                    <li>Python</li>
                     <li>NPM</li>
                     <li>Mocha</li>
                     <li>Chai</li>
@@ -282,12 +281,10 @@ let allHtml = `<section id="display1" class="displayed">
                     <li>GitHub</li>
                     <li>Heroku</li>
                     <li>Enzyme</li>
-                </ul>
-                <h4>Additional Skills</h4>
-                <ul class="listWrap">
                     <li>RESTful APIs</li>
                     <li>Unit testing</li>
                     <li>Data structures</li>
+                    
                 </ul>
             </div>
             <div class="resWrap">
