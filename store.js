@@ -51,7 +51,7 @@ let workHtml = `<section id="display1" class="displayed">
             <hr>
             <article class="work" id="item-3">
                 <div class="work-photo">
-                    <a href="https://showtunes-app.now.sh/" target="_blank" class="nonClick">
+                    <a href="https://showtunes.vercel.app/" target="_blank" class="nonClick">
                         <div class="content" style="background-image: url('Showtunes.png');">
                         </div>
                     </a>
@@ -64,7 +64,7 @@ let workHtml = `<section id="display1" class="displayed">
                         and creates a playlist! This project showcases my skills in
                         Javascript/ CSS/ HTML/ React/ Node/ PostgreSQL.</p>
                     <ul class="workLinks">
-                        <li>live- <a href="https://showtunes-app.now.sh/" target="_blank" class="nonClick">Use
+                        <li>live- <a href="https://showtunes.vercel.app/" target="_blank" class="nonClick">Use
                                 Showtunes</a>
                         </li>
                         <li>repo- <a href="https://github.com/nasjones/playlist-client" target="_blank"
@@ -200,7 +200,7 @@ let allHtml = `<section id="display1" class="displayed">
             <hr>
             <article class="work" id="item-3">
                 <div class="work-photo">
-                    <a href="https://showtunes-app.now.sh/" target="_blank" class="nonClick">
+                    <a href="https://showtunes.vercel.app/" target="_blank" class="nonClick">
                         <div class="content" style="background-image: url('Showtunes.png');">
                         </div>
                     </a>
@@ -213,7 +213,7 @@ let allHtml = `<section id="display1" class="displayed">
                         and creates a playlist! This project showcases my skills in
                         Javascript/ CSS/ HTML/ React/ Node/ PostgreSQL.</p>
                     <ul class="workLinks">
-                        <li>live- <a href="https://showtunes-app.now.sh/" target="_blank" class="nonClick">Use
+                        <li>live- <a href="https://showtunes.vercel.app/" target="_blank" class="nonClick">Use
                                 Showtunes</a>
                         </li>
                         <li>repo- <a href="https://github.com/nasjones/playlist-client" target="_blank"
