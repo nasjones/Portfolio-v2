@@ -85,6 +85,7 @@ let bioHtml = `<section id="display2" class="displayed">
         </section>`
 
 let resHtml = `<section id="display3" class="displayed">
+            <h2><a href="./Nassir-Jones-Resume.pdf" download>Download my full resume.</a></h2>
             <div class="resWrap">
                 <h3>Skills</h3>
                 <h4>Front-end</h4>
@@ -245,6 +246,7 @@ let allHtml = `<section id="display1" class="displayed">
         <hr />
         <section id="display3" class="displayed">
             <span class="orangeText"><h2>Resume</h2></span>
+            <h3><a href="./Nassir-Jones-Resume.pdf" download>Download my full resume.</a></h3>
             <div class="resWrap">
                 <h3>Skills</h3>
                 <h4>Front-end</h4>

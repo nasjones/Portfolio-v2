@@ -126,6 +126,7 @@ a:hover {
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 70%;
+    font-size: 16px;
 }
 
 .listWrap>li {
@@ -204,6 +205,9 @@ a:hover {
     }
     .displayed {
         margin-top: 60px;
+    }
+    .listWrap {
+        font-size: 20px;
     }
 }
 
