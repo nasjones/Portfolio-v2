@@ -1,7 +1,7 @@
 let workHtml = `<section id="display1" class="displayed">
             <article class="work" id="item-1">
                 <div class="work-photo">
-                    <a href="https://quizbowl-opal.vercel.app/" target="_blank" class="nonClick">
+                    <a href="https://quizbowl-opal.vercel.app/" target="_blank" rel="noopener noreferrer" class="nonClick">
                         <div class="content" style="background-image: url('quizbowl.png');">
                         </div>
                     </a>
@@ -12,14 +12,11 @@ let workHtml = `<section id="display1" class="displayed">
                         these quizzes public or private where they are only accessible by the unique link provided. This
                         project showcases my skills in Javascript/ CSS/ HTML/ React/ Node/ PostgreSQL.</p>
                     <ul>
-                        <li>live- <a href="https://quizbowl-opal.vercel.app/" target="_blank" class="nonClick">Create a
+                        <li>live- <a href="https://quizbowl-opal.vercel.app/" target="_blank" class="nonClick" rel="noopener noreferrer">Create a
                                 quiz</a>
                         </li>
-                        <li>repo- <a href="https://github.com/nasjones/quiz-maker-app" target="_blank"
-                                class="nonClick">Check
-                                out
-                                the
-                                files</a>
+                        <li>repo- <a href="https://github.com/nasjones/quiz-maker-app" target="_blank" rel="noopener noreferrer"
+                                class="nonClick">Check out the files</a>
                         </li>
                     </ul>
                 </div>
@@ -27,7 +24,7 @@ let workHtml = `<section id="display1" class="displayed">
             <hr>
             <article class="work" id="item-2">
                 <div class="work-photo">
-                    <a href="https://nasjones.github.io/Crudhub/" target="_blank" class="nonClick">
+                    <a href="https://nasjones.github.io/Crudhub/" target="_blank" rel="noopener noreferrer" class="nonClick">
                         <div class="content" style="background-image: url('Crudhub.png');">
                         </div>
                     </a>
@@ -38,10 +35,10 @@ let workHtml = `<section id="display1" class="displayed">
                         restaurants within half a mile of them using the Edamam API and Google
                         Places API. This project showcases my skills in Javascript/ Jquery/ CSS/ HTML.</p>
                     <ul class="workLinks">
-                        <li>live- <a href="https://nasjones.github.io/Crudhub/" target="_blank" class="nonClick">Use
+                        <li>live- <a href="https://nasjones.github.io/Crudhub/" target="_blank" rel="noopener noreferrer" class="nonClick">Use
                                 Crudhub</a>
                         </li>
-                        <li>repo- <a href="https://github.com/nasjones/Crudhub" target="_blank" class="nonClick">Check
+                        <li>repo- <a href="https://github.com/nasjones/Crudhub" target="_blank" rel="noopener noreferrer" class="nonClick">Check
                                 out
                                 the files</a>
                         </li>
@@ -51,7 +48,7 @@ let workHtml = `<section id="display1" class="displayed">
             <hr>
             <article class="work" id="item-3">
                 <div class="work-photo">
-                    <a href="https://showtunes.vercel.app/" target="_blank" class="nonClick">
+                    <a href="https://showtunes.vercel.app/" target="_blank" rel="noopener noreferrer" class="nonClick">
                         <div class="content" style="background-image: url('Showtunes.png');">
                         </div>
                     </a>
@@ -64,10 +61,10 @@ let workHtml = `<section id="display1" class="displayed">
                         and creates a playlist! This project showcases my skills in
                         Javascript/ CSS/ HTML/ React/ Node/ PostgreSQL.</p>
                     <ul class="workLinks">
-                        <li>live- <a href="https://showtunes.vercel.app/" target="_blank" class="nonClick">Use
+                        <li>live- <a href="https://showtunes.vercel.app/" target="_blank" rel="noopener noreferrer" class="nonClick">Use
                                 Showtunes</a>
                         </li>
-                        <li>repo- <a href="https://github.com/nasjones/playlist-client" target="_blank"
+                        <li>repo- <a href="https://github.com/nasjones/playlist-client" target="_blank" rel="noopener noreferrer"
                                 class="nonClick">Check out
                                 the files</a>
                         </li>
@@ -85,7 +82,7 @@ let bioHtml = `<section id="display2" class="displayed">
         </section>`
 
 let resHtml = `<section id="display3" class="displayed">
-            <h2><a href="./Nassir-Jones-Resume.pdf" download>Download my full resume.</a></h2>
+            <h2><a href="./Nassir_Jones_Resume.pdf" download>Download my full resume.</a></h2>
             <div class="resWrap">
                 <h3>Skills</h3>
                 <h4>Front-end</h4>
@@ -151,7 +148,7 @@ let allHtml = `<section id="display1" class="displayed">
             <span class="orangeText"><h2>My Work</h2></span>
             <article class="work" id="item-1">
                 <div class="work-photo">
-                    <a href="https://quizbowl-opal.vercel.app/" target="_blank" class="nonClick">
+                    <a href="https://quizbowl-opal.vercel.app/" target="_blank" rel="noopener noreferrer" class="nonClick">
                         <div class="content" style="background-image: url('quizbowl.png');">
                         </div>
                     </a>
@@ -162,14 +159,11 @@ let allHtml = `<section id="display1" class="displayed">
                         these quizzes public or private where they are only accessible by the unique link provided. This
                         project showcases my skills in Javascript/ CSS/ HTML/ React/ Node/ PostgreSQL.</p>
                     <ul>
-                        <li>live- <a href="https://quizbowl-opal.vercel.app/" target="_blank" class="nonClick">Create a
+                        <li>live- <a href="https://quizbowl-opal.vercel.app/" target="_blank" rel="noopener noreferrer"class="nonClick">Create a
                                 quiz</a>
                         </li>
-                        <li>repo- <a href="https://github.com/nasjones/quiz-maker-app" target="_blank"
-                                class="nonClick">Check
-                                out
-                                the
-                                files</a>
+                        <li>repo- <a href="https://github.com/nasjones/quiz-maker-app" target="_blank" rel="noopener noreferrer"
+                                class="nonClick">Check out the files</a>
                         </li>
                     </ul>
                 </div>
@@ -177,7 +171,7 @@ let allHtml = `<section id="display1" class="displayed">
             <hr>
             <article class="work" id="item-2">
                 <div class="work-photo">
-                    <a href="https://nasjones.github.io/Crudhub/" target="_blank" class="nonClick">
+                    <a href="https://nasjones.github.io/Crudhub/" target="_blank" rel="noopener noreferrer" class="nonClick">
                         <div class="content" style="background-image: url('Crudhub.png');">
                         </div>
                     </a>
@@ -188,10 +182,10 @@ let allHtml = `<section id="display1" class="displayed">
                         restaurants within half a mile of them using the Edamam API and Google
                         Places API. This project showcases my skills in Javascript/ Jquery/ CSS/ HTML.</p>
                     <ul class="workLinks">
-                        <li>live- <a href="https://nasjones.github.io/Crudhub/" target="_blank" class="nonClick">Use
+                        <li>live- <a href="https://nasjones.github.io/Crudhub/" target="_blank" rel="noopener noreferrer" class="nonClick">Use
                                 Crudhub</a>
                         </li>
-                        <li>repo- <a href="https://github.com/nasjones/Crudhub" target="_blank" class="nonClick">Check
+                        <li>repo- <a href="https://github.com/nasjones/Crudhub" target="_blank" rel="noopener noreferrer" class="nonClick">Check
                                 out
                                 the files</a>
                         </li>
@@ -201,7 +195,7 @@ let allHtml = `<section id="display1" class="displayed">
             <hr>
             <article class="work" id="item-3">
                 <div class="work-photo">
-                    <a href="https://showtunes.vercel.app/" target="_blank" class="nonClick">
+                    <a href="https://showtunes.vercel.app/" target="_blank" rel="noopener noreferrer" class="nonClick">
                         <div class="content" style="background-image: url('Showtunes.png');">
                         </div>
                     </a>
@@ -214,13 +208,11 @@ let allHtml = `<section id="display1" class="displayed">
                         and creates a playlist! This project showcases my skills in
                         Javascript/ CSS/ HTML/ React/ Node/ PostgreSQL.</p>
                     <ul class="workLinks">
-                        <li>live- <a href="https://showtunes.vercel.app/" target="_blank" class="nonClick">Use
+                        <li>live- <a href="https://showtunes.vercel.app/" target="_blank" rel="noopener noreferrer" class="nonClick">Use
                                 Showtunes</a>
                         </li>
-                        <li>repo- <a href="https://github.com/nasjones/playlist-client" target="_blank"
-                                class="nonClick">Check
-                                out
-                                the files</a>
+                        <li>repo- <a href="https://github.com/nasjones/playlist-client" target="_blank" rel="noopener noreferrer"
+                                class="nonClick">Check out the files</a>
                         </li>
                     </ul>
                 </div>
@@ -246,7 +238,7 @@ let allHtml = `<section id="display1" class="displayed">
         <hr />
         <section id="display3" class="displayed">
             <span class="orangeText"><h2>Resume</h2></span>
-            <h3><a href="./Nassir-Jones-Resume.pdf" download>Download my full resume.</a></h3>
+            <h3><a href="./Nassir_Jones_Resume.pdf" download>Download my full resume.</a></h3>
             <div class="resWrap">
                 <h3>Skills</h3>
                 <h4>Front-end</h4>
