@@ -104,9 +104,7 @@ let resHtml = `<section id="display3" class="displayed">
                 </ul>
                 <h4>Other technologies</h4>
                <ul class="listWrap">
-                    <li>C</li>
                     <li>Java</li>
-                    <li>Assembly</li>
                     <li>Python</li>
                     <li>NPM</li>
                     <li>Mocha</li>
@@ -127,19 +125,19 @@ let resHtml = `<section id="display3" class="displayed">
             <div class="resWrap">
                 <h3>Education</h3>
                 <h4>Thinkful 2019-2020</h4>
-                <span class="ital">Full Stack Flex</span>
+                <span class="ital">Full Stack Flex:</span>
+                <br/>
                 <ul class="listWrap">
                     <li>This program has given me industry best practices in a hands on 6 month web development course.
                     </li>
                 </ul>
 
                 <h4>Nassau Community College 2017-2019</h4>
-                <span class="ital">Associates in Computer Science</span>
+                <span class="ital">Associate Degree in Computer Science:</span>
+                <br/>
                 <ul class="listWrap">
                     <li>Mobile-app development</li>
-                    <li>C programming</li>
                     <li>Java programming</li>
-                    <li>Assembly</li>
                 </ul>
             </div>
         </section>`
@@ -242,49 +240,47 @@ let allHtml = `<section id="display1" class="displayed">
             <div class="resWrap">
                 <h3>Skills</h3>
                 <h4>Front-end</h4>
-                <ul class="listWrap">
-                    <li>JavaScript ES6</li>
-                    <li>React</li>
-                    <li>React Hooks</li>
-                    <li>Redux</li>
-                    <li>Express</li>
-                    <li>jQuery</li>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                </ul>
+                    <ul class="listWrap">
+                        <li>JavaScript ES6</li>
+                        <li>React</li>
+                        <li>React Hooks</li>
+                        <li>Redux</li>
+                        <li>Express</li>
+                        <li>jQuery</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                    </ul>
                 <h4>Back-end</h4>
-                <ul class="listWrap">
-                    <li>Node.js</li>
-                    <li>MongoDB</li>
-                    <li>PostgreSQL</li>
-                </ul>
+                    <ul class="listWrap">
+                        <li>Node.js</li>
+                        <li>MongoDB</li>
+                        <li>PostgreSQL</li>
+                    </ul>
                 <h4>Other technologies</h4>
-                <ul class="listWrap">
-                    <li>C</li>
-                    <li>Java</li>
-                    <li>Assembly</li>
-                    <li>Python</li>
-                    <li>NPM</li>
-                    <li>Mocha</li>
-                    <li>Chai</li>
-                    <li>Jasmine</li>
-                    <li>Karma</li>
-                    <li>Webpack</li>
-                    <li>Browserify</li>
-                    <li>Git</li>
-                    <li>GitHub</li>
-                    <li>Heroku</li>
-                    <li>Enzyme</li>
-                    <li>RESTful APIs</li>
-                    <li>Unit testing</li>
-                    <li>Data structures</li>
-                    
-                </ul>
+                    <ul class="listWrap">
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>NPM</li>
+                        <li>Mocha</li>
+                        <li>Chai</li>
+                        <li>Jasmine</li>
+                        <li>Karma</li>
+                        <li>Webpack</li>
+                        <li>Browserify</li>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>Heroku</li>
+                        <li>Enzyme</li>
+                        <li>RESTful APIs</li>
+                        <li>Unit testing</li>
+                        <li>Data structures</li>
+                    </ul>
             </div>
             <div class="resWrap">
                 <h3>Education</h3>
                 <h4>Thinkful 2019-2020</h4>
                 <span class="ital">Full Stack Flex</span>
+                <br/>
                 <ul class="listWrap">
                     <li>This program has given me industry best practices in a hands on 6 month web development course.
                     </li>
@@ -292,10 +288,11 @@ let allHtml = `<section id="display1" class="displayed">
 
                 <h4>Nassau Community College 2017-2019</h4>
                 <span class="ital">Associates in Computer Science</span>
+                <br/>
                 <ul class="listWrap">
                     <li>Mobile-app development</li>
-                    <li>C programming</li>
-                    <li>Java programming</li>
+                    <li>C</li>
+                    <li>Java</li>
                     <li>Assembly</li>
                 </ul>
             </div>
