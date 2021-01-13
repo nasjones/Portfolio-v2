@@ -214,7 +214,8 @@ a:hover {
     width: 70%;
     padding-inline-start: 40px;
   }
-  .navLabel:hover {
+  .navLabel:hover,
+  .navLabel:focus-within {
     color: #ff6600;
   }
 }
