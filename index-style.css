@@ -214,6 +214,9 @@ a:hover {
     width: 70%;
     padding-inline-start: 40px;
   }
+  .navLabel:hover {
+    color: #ff6600;
+  }
 }
 
 @media screen and (min-width: 885px) {
