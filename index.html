@@ -1,89 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta property="og:image" content="mePic.jpg" />
+		<title>Portfolio</title>
+		<link
+			href="https://fonts.googleapis.com/css?family=Inconsolata%7CKarla&display=swap"
+			rel="stylesheet"
+		/>
+		<link href="index-style.css" rel="stylesheet" type="text/css" />
+		<link rel="icon" href="personal-favicon.png" />
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta property="og:image" content="mePic.jpg">
-    <title>Portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata%7CKarla&display=swap" rel="stylesheet">
-    <link href="index-style.css" rel="stylesheet" type="text/css" />
-    <link rel="icon" href="personal-favicon.png">
+	<body>
+		<header>
+			<div class="topContact">
+				<a href="mailto:nassircjones@gmail.com">Email</a>
+				<a
+					href="https://www.linkedin.com/in/nassir-jones-0351b4174/"
+					target="_blank"
+					rel="noopener noreferrer"
+					>LinkedIn</a
+				>
+				<a
+					href="https://github.com/nasjones"
+					target="_blank"
+					rel="noopener noreferrer"
+					>Github</a
+				>
+			</div>
+			<div id="headText">
+				<h1 class="headIntro">
+					Hi, I'm <span class="orangeText">Nassir</span>. I'm a<br />
+					<span class="orangeText">software engineer</span>
+					focused<br />
+					on making the web more<br />
+					<span class="orangeText">accessible</span>,
+					<span class="orangeText">beautiful</span>, and
+					<span class="orangeText">diverse</span>.
+				</h1>
+				<p class="headOutro">
+					I am currently enrolled in Springboard's Software Engineer
+					Track sharpening my dev skills. I'm excited to chat about
+					how I can contribute to your team.
+				</p>
+			</div>
 
-</head>
+			<nav id="myNav">
+				<div id="navText">
+					<label for="workRad" class="navLabel">
+						Work
+						<input
+							type="radio"
+							id="workRad"
+							class="navRad"
+							name="navRad"
+						/>
+						<span class="radArrow">˅</span>
+					</label>
+					<label for="bioRad" class="navLabel">
+						About Me
+						<input
+							type="radio"
+							id="bioRad"
+							class="navRad"
+							name="navRad"
+						/>
+						<span class="radArrow">˅</span>
+					</label>
+					<label for="resRad" class="navLabel">
+						Resume
+						<input
+							type="radio"
+							id="resRad"
+							class="navRad"
+							name="navRad"
+						/>
+						<span class="radArrow">˅</span>
+					</label>
+				</div>
+			</nav>
 
-<body>
-    <header>
-        <div class="topContact">
-            <a href="mailto:nassircjones@gmail.com">Email</a>
-            <a href="https://www.linkedin.com/in/nassir-jones-0351b4174/" target="_blank"
-                rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://github.com/nasjones" target="_blank" rel="noopener noreferrer">Github</a>
-        </div>
-        <div id="headText">
-            <h1 class="headIntro">
-                Hi, I'm <span class="orangeText">Nassir</span>. I'm a<br />
-                <span class="orangeText">software engineer</span> focused<br />
-                on making the web more<br />
-                <span class="orangeText">accessible</span>, <span class="orangeText">beautiful</span>, and <span
-                    class="orangeText">diverse</span>.
-            </h1>
-            <p class="headOutro">I recently graduated from Thinkful's Engineering Flex program where I sharpened my dev
-                skills. I'm
-                currently looking for opportunities in New York and am excited to chat about how I can contribute to
-                your team.</p>
-        </div>
+			<div id="menuAlert">
+				<span>Scroll for more</span>
+				<button id="closeAlert" onclick="closeAlert()">x</button>
+			</div>
+		</header>
 
-        <nav id="myNav">
+		<main id="stage"></main>
 
-            <div id="navText">
-
-                <label for="workRad" class="navLabel">
-                    Work
-                    <input type="radio" id="workRad" class="navRad" name="navRad">
-                    <span class="radArrow">˅</span>
-                </label>
-                <label for="bioRad" class="navLabel">
-                    About Me
-                    <input type="radio" id="bioRad" class="navRad" name="navRad">
-                    <span class="radArrow">˅</span>
-                </label>
-                <label for="resRad" class="navLabel">
-                    Resume
-                    <input type="radio" id="resRad" class="navRad" name="navRad">
-                    <span class="radArrow">˅</span>
-                </label>
-            </div>
-        </nav>
-
-        <div id="menuAlert">
-            <span>Scroll for more</span> <button id="closeAlert" onclick="closeAlert()">x</button>
-        </div>
-    </header>
-
-    <main id="stage">
-    </main>
-
-
-    <footer id="contact-info">
-        <h4>Contact Me:</h4>
-        <div id="footImages">
-            <a href="mailto:nassircjones@gmail.com">
-                <img class="contact-img" src="./email-favicon.png" alt="email-favicon">
-            </a>
-            <a href="https://www.linkedin.com/in/nassir-jones-0351b4174/" target="_blank" rel="noopener noreferrer">
-                <img class="contact-img" src="./linked-icon.png" alt="linkedin-favicon">
-            </a>
-            <a href="https://github.com/nasjones" target="_blank" rel="noopener noreferrer">
-                <img class="contact-img" src="./github-favicon.png" alt="github-favicon">
-            </a>
-        </div>
-    </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="store.js"></script>
-    <script src="index-java.js"></script>
-
-</body>
-
+		<footer id="contact-info">
+			<h4>Contact Me:</h4>
+			<div id="footImages">
+				<a href="mailto:nassircjones@gmail.com">
+					<img
+						class="contact-img"
+						src="./email-favicon.png"
+						alt="email-favicon"
+					/>
+				</a>
+				<a
+					href="https://www.linkedin.com/in/nassir-jones-0351b4174/"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<img
+						class="contact-img"
+						src="./linked-icon.png"
+						alt="linkedin-favicon"
+					/>
+				</a>
+				<a
+					href="https://github.com/nasjones"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<img
+						class="contact-img"
+						src="./github-favicon.png"
+						alt="github-favicon"
+					/>
+				</a>
+			</div>
+		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="store.js"></script>
+		<script src="index-java.js"></script>
+	</body>
 </html>

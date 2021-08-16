@@ -124,6 +124,14 @@ let resHtml = `<section id="display3" class="displayed">
             </div>
             <div class="resWrap">
                 <h3>Education</h3>
+                <h4>Springboard 2021</h4>
+                <span class="ital">Software Engineering track</span>
+                <br/>
+                <ul class="listWrap">
+                    <li>This program has prepared me for a true Software Engineer experience from what skills I need to what positions to look for.
+                    </li>
+                </ul>
+                
                 <h4>Thinkful 2019-2020</h4>
                 <span class="ital">Full Stack Flex:</span>
                 <br/>
@@ -278,6 +286,14 @@ let allHtml = `<section id="display1" class="displayed">
             </div>
             <div class="resWrap">
                 <h3>Education</h3>
+                <h4>Springboard 2021</h4>
+                <span class="ital">Software Engineering track</span>
+                <br/>
+                <ul class="listWrap">
+                    <li>This program has prepared me for a true Software Engineer experience from what skills I need to what positions to look for.
+                    </li>
+                </ul>
+
                 <h4>Thinkful 2019-2020</h4>
                 <span class="ital">Full Stack Flex</span>
                 <br/>
@@ -293,7 +309,7 @@ let allHtml = `<section id="display1" class="displayed">
                     <li>Mobile-app development</li>
                     <li>C</li>
                     <li>Java</li>
-                    <li>Assembly</li>
+                    <li>Data Structures</li>
                 </ul>
             </div>
         </section>
