@@ -133,16 +133,18 @@ let resHtml = `<section id="display3" class="displayed">
                 <span class="ital">Software Engineering track</span>
                 <br/>
                 <ul class="listWrap">
-                    <li>This program has prepared me for a true Software Engineer experience from what skills I need to what positions to look for.
+                    <li>Python
                     </li>
+                    <li>Flask</li>
                 </ul>
                 
                 <h4>Thinkful 2019-2020</h4>
                 <span class="ital">Full Stack Flex:</span>
                 <br/>
                 <ul class="listWrap">
-                    <li>This program has given me industry best practices in a hands on 6 month web development course.
+                    <li>PERN Stack
                     </li>
+                    <li>Accesible Programming</li>
                 </ul>
 
                 <h4>Nassau Community College 2017-2019</h4>
@@ -292,16 +294,18 @@ let allHtml = `<section id="display1" class="displayed">
                 <span class="ital">Software Engineering track</span>
                 <br/>
                 <ul class="listWrap">
-                    <li>This program has prepared me for a true Software Engineer experience from what skills I need to what positions to look for.
+                    <li>Python
                     </li>
+                    <li>Flask</li>
                 </ul>
-
+                
                 <h4>Thinkful 2019-2020</h4>
-                <span class="ital">Full Stack Flex</span>
+                <span class="ital">Full Stack Flex:</span>
                 <br/>
                 <ul class="listWrap">
-                    <li>This program has given me industry best practices in a hands on 6 month web development course.
+                    <li>PERN Stack
                     </li>
+                    <li>Accesible Programming</li>
                 </ul>
 
                 <h4>Nassau Community College 2017-2019</h4>
