@@ -71,15 +71,20 @@ let workHtml = `<section id="display1" class="displayed">
                     </ul>
                 </div>
             </article>
-        </section>`
+        </section>`;
 
 let bioHtml = `<section id="display2" class="displayed">
             <div class="bioWrap">
             <img src='mePic.jpg' id='mePic'>
-            <p id="bio" >I was born and raised in Long Island New York. From as far back as I can remember I have always been in front of a computer screen. trying to figure out how to tweak something online or find a way to solve some problem of mine. I have been passionate about programming for years now, as it allows for free expression that incorporates problem solving. Web development was the perfect area of programming to explore this passion.
+            <p id="bio" >I was born and raised in Long Island New York. From as 
+            far back as I can remember I
+            have always been in front of a computer screen trying to 
+            figure out how to tweak something online or find a way
+            to solve a problem. I'm passionate about programming as it 
+            allows for free expression and problem solving.
             </p>
             </div>
-        </section>`
+        </section>`;
 
 let resHtml = `<section id="display3" class="displayed">
             <h2><a href="./Nassir_Jones_Resume.pdf" download>Download my full resume.</a></h2>
@@ -148,7 +153,7 @@ let resHtml = `<section id="display3" class="displayed">
                     <li>Java programming</li>
                 </ul>
             </div>
-        </section>`
+        </section>`;
 
 let allHtml = `<section id="display1" class="displayed">
             <span class="orangeText"><h2>My Work</h2></span>
@@ -229,15 +234,12 @@ let allHtml = `<section id="display1" class="displayed">
             <span class="orangeText"><h2>About Me</h2></span>
             <div class="bioWrap">
             <img src='mePic.jpg' id='mePic'>
-            <p id="bio">I was born and raised in Long Island New York. From as far back as I can
-                remember I
-                have always been in front of a computer screen. trying to figure out how to tweak something online or
-                find a way
-                to solve some problem of mine. I have been passionate about programming for years now, as it allows for
-                free
-                expression that incorporates problem solving. Web development was the perfect area of programming to
-                explore
-                this passion.
+            <p id="bio">I was born and raised in Long Island New York. From as 
+                far back as I can remember I
+                have always been in front of a computer screen trying to 
+                figure out how to tweak something online or find a way
+                to solve a problem. I'm passionate about programming as it 
+                allows for free expression and problem solving. 
             </p>
             </div>
         </section>
@@ -313,4 +315,4 @@ let allHtml = `<section id="display1" class="displayed">
                 </ul>
             </div>
         </section>
-        <hr />`
+        <hr />`;
