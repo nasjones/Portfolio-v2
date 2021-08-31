@@ -1,6 +1,27 @@
 let workHtml = `<section id="display1" class="displayed">
             <article class="work" id="item-1">
                 <div class="work-photo">
+                    <a href="https://my-fav-games.herokuapp.com/" target="_blank" rel="noopener noreferrer" class="nonClick">
+                        <div class="content" style="background-image: url('MyGames.png');">
+                        </div>
+                    </a>
+                </div>
+                <div class="work-sum">
+                    <h3>My Games</h3>
+                    <p class="body-text">A web app that allows users to search for and save their favorite video games and receive reccommendations of similar video games.
+                    This project showcases my skills in Python/ Flask/ PostgreSQL/ CSS/ HTML.</p>
+                    <ul>
+                        <li>live- <a href="https://my-fav-games.herokuapp.com/" target="_blank" class="nonClick" rel="noopener noreferrer">Find some Reccommendations</a>
+                        </li>
+                        <li>repo- <a href="https://github.com/nasjones/my_games" target="_blank" rel="noopener noreferrer"
+                                class="nonClick">Check out the files</a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <hr>
+            <article class="work" id="item-2">
+                <div class="work-photo">
                     <a href="https://quizbowl-opal.vercel.app/" target="_blank" rel="noopener noreferrer" class="nonClick">
                         <div class="content" style="background-image: url('quizbowl.png');">
                         </div>
@@ -22,7 +43,7 @@ let workHtml = `<section id="display1" class="displayed">
                 </div>
             </article>
             <hr>
-            <article class="work" id="item-2">
+            <article class="work" id="item-3">
                 <div class="work-photo">
                     <a href="https://nasjones.github.io/Crudhub/" target="_blank" rel="noopener noreferrer" class="nonClick">
                         <div class="content" style="background-image: url('Crudhub.png');">
@@ -46,7 +67,7 @@ let workHtml = `<section id="display1" class="displayed">
                 </div>
             </article>
             <hr>
-            <article class="work" id="item-3">
+            <article class="work" id="item-4">
                 <div class="work-photo">
                     <a href="https://showtunes.vercel.app/" target="_blank" rel="noopener noreferrer" class="nonClick">
                         <div class="content" style="background-image: url('Showtunes.png');">
@@ -161,6 +182,27 @@ let allHtml = `<section id="display1" class="displayed">
             <span class="orangeText"><h2>My Work</h2></span>
             <article class="work" id="item-1">
                 <div class="work-photo">
+                    <a href="https://my-fav-games.herokuapp.com/" target="_blank" rel="noopener noreferrer" class="nonClick">
+                        <div class="content" style="background-image: url('MyGames.png');">
+                        </div>
+                    </a>
+                </div>
+                <div class="work-sum">
+                    <h3>My Games</h3>
+                    <p class="body-text">A web app that allows users to search for and save their favorite video games and receive reccommendations of similar video games.
+                    This project showcases my skills in Python/ Flask/ PostgreSQL/ CSS/ HTML.</p>
+                    <ul>
+                        <li>live- <a href="https://my-fav-games.herokuapp.com/" target="_blank" class="nonClick" rel="noopener noreferrer">Find some Reccommendations</a>
+                        </li>
+                        <li>repo- <a href="https://github.com/nasjones/my_games" target="_blank" rel="noopener noreferrer"
+                                class="nonClick">Check out the files</a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <hr>
+            <article class="work" id="item-2">
+                <div class="work-photo">
                     <a href="https://quizbowl-opal.vercel.app/" target="_blank" rel="noopener noreferrer" class="nonClick">
                         <div class="content" style="background-image: url('quizbowl.png');">
                         </div>
@@ -182,7 +224,7 @@ let allHtml = `<section id="display1" class="displayed">
                 </div>
             </article>
             <hr>
-            <article class="work" id="item-2">
+            <article class="work" id="item-3">
                 <div class="work-photo">
                     <a href="https://nasjones.github.io/Crudhub/" target="_blank" rel="noopener noreferrer" class="nonClick">
                         <div class="content" style="background-image: url('Crudhub.png');">
@@ -206,7 +248,7 @@ let allHtml = `<section id="display1" class="displayed">
                 </div>
             </article>
             <hr>
-            <article class="work" id="item-3">
+            <article class="work" id="item-4">
                 <div class="work-photo">
                     <a href="https://showtunes.vercel.app/" target="_blank" rel="noopener noreferrer" class="nonClick">
                         <div class="content" style="background-image: url('Showtunes.png');">
