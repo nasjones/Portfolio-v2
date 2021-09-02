@@ -9,7 +9,7 @@ let workHtml = `<section id="display1" class="displayed">
                 <div class="work-sum">
                     <h3>My Games</h3>
                     <p class="body-text">A web app that allows users to search for and save their favorite video games and receive reccommendations of similar video games.
-                    This project showcases my skills in Python/ Flask/ PostgreSQL/ CSS/ HTML.</p>
+                    This project showcases my skills in Python/ JavaScript/ Flask/ PostgreSQL/ CSS/ HTML.</p>
                     <ul>
                         <li>live- <a href="https://my-fav-games.herokuapp.com/" target="_blank" class="nonClick" rel="noopener noreferrer">Find some Reccommendations</a>
                         </li>
@@ -190,7 +190,7 @@ let allHtml = `<section id="display1" class="displayed">
                 <div class="work-sum">
                     <h3>My Games</h3>
                     <p class="body-text">A web app that allows users to search for and save their favorite video games and receive reccommendations of similar video games.
-                    This project showcases my skills in Python/ Flask/ PostgreSQL/ CSS/ HTML.</p>
+                    This project showcases my skills in Python/ JavaScript/ Flask/ PostgreSQL/ CSS/ HTML.</p>
                     <ul>
                         <li>live- <a href="https://my-fav-games.herokuapp.com/" target="_blank" class="nonClick" rel="noopener noreferrer">Find some Reccommendations</a>
                         </li>
