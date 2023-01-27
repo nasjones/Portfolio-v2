@@ -1,7 +1,7 @@
 let workHtml = `<section id="display1" class="displayed">
             <article class="work" id="item-1">
                 <div class="work-photo">
-                    <a href="https://my-fav-games.herokuapp.com/" target="_blank" rel="noopener noreferrer" class="nonClick">
+                    <a href="https://game-finder.herokuapp.com" target="_blank" rel="noopener noreferrer" class="nonClick">
                         <div class="content" style="background-image: url('MyGames.png');">
                         </div>
                     </a>
@@ -11,7 +11,7 @@ let workHtml = `<section id="display1" class="displayed">
                     <p class="body-text">A web app that allows users to search for and save their favorite video games and receive reccommendations of similar video games.
                     This project showcases my skills in Python/ JavaScript/ Flask/ PostgreSQL/ CSS/ HTML.</p>
                     <ul>
-                        <li>live- <a href="https://my-fav-games.herokuapp.com/" target="_blank" class="nonClick" rel="noopener noreferrer">Find some Reccommendations</a>
+                        <li>live- <a href="https://game-finder.herokuapp.com" target="_blank" class="nonClick" rel="noopener noreferrer">Find some Reccommendations</a>
                         </li>
                         <li>repo- <a href="https://github.com/nasjones/my_games" target="_blank" rel="noopener noreferrer"
                                 class="nonClick">Check out the files</a>
@@ -22,7 +22,7 @@ let workHtml = `<section id="display1" class="displayed">
             <hr>
             <article class="work" id="item-2">
                 <div class="work-photo">
-                    <a href="https://quizbowl-opal.vercel.app/" target="_blank" rel="noopener noreferrer" class="nonClick">
+                    <a href="https://quiz-bowl-one.vercel.app/" target="_blank" rel="noopener noreferrer" class="nonClick">
                         <div class="content" style="background-image: url('quizbowl.png');">
                         </div>
                     </a>
@@ -33,7 +33,7 @@ let workHtml = `<section id="display1" class="displayed">
                         these quizzes public or private where they are only accessible by the unique link provided. This
                         project showcases my skills in Javascript/ CSS/ HTML/ React/ Node/ PostgreSQL.</p>
                     <ul>
-                        <li>live- <a href="https://quizbowl-opal.vercel.app/" target="_blank" class="nonClick" rel="noopener noreferrer">Create a
+                        <li>live- <a href="https://quiz-bowl-one.vercel.app/" target="_blank" class="nonClick" rel="noopener noreferrer">Create a
                                 quiz</a>
                         </li>
                         <li>repo- <a href="https://github.com/nasjones/quiz-maker-app" target="_blank" rel="noopener noreferrer"
@@ -69,7 +69,7 @@ let workHtml = `<section id="display1" class="displayed">
             <hr>
             <article class="work" id="item-4">
                 <div class="work-photo">
-                    <a href="https://showtunes.vercel.app/" target="_blank" rel="noopener noreferrer" class="nonClick">
+                    <a href="https://show-tunes.vercel.app/" target="_blank" rel="noopener noreferrer" class="nonClick">
                         <div class="content" style="background-image: url('Showtunes.png');">
                         </div>
                     </a>
@@ -82,7 +82,7 @@ let workHtml = `<section id="display1" class="displayed">
                         and creates a playlist! This project showcases my skills in
                         Javascript/ CSS/ HTML/ React/ Node/ PostgreSQL.</p>
                     <ul class="workLinks">
-                        <li>live- <a href="https://showtunes.vercel.app/" target="_blank" rel="noopener noreferrer" class="nonClick">Use
+                        <li>live- <a href="https://show-tunes.vercel.app/" target="_blank" rel="noopener noreferrer" class="nonClick">Use
                                 Showtunes</a>
                         </li>
                         <li>repo- <a href="https://github.com/nasjones/playlist-client" target="_blank" rel="noopener noreferrer"
@@ -182,7 +182,7 @@ let allHtml = `<section id="display1" class="displayed">
             <span class="orangeText"><h2>My Work</h2></span>
             <article class="work" id="item-1">
                 <div class="work-photo">
-                    <a href="https://my-fav-games.herokuapp.com/" target="_blank" rel="noopener noreferrer" class="nonClick">
+                    <a href="https://game-finder.herokuapp.com/" target="_blank" rel="noopener noreferrer" class="nonClick">
                         <div class="content" style="background-image: url('MyGames.png');">
                         </div>
                     </a>
@@ -192,7 +192,7 @@ let allHtml = `<section id="display1" class="displayed">
                     <p class="body-text">A web app that allows users to search for and save their favorite video games and receive reccommendations of similar video games.
                     This project showcases my skills in Python/ JavaScript/ Flask/ PostgreSQL/ CSS/ HTML.</p>
                     <ul>
-                        <li>live- <a href="https://my-fav-games.herokuapp.com/" target="_blank" class="nonClick" rel="noopener noreferrer">Find some Reccommendations</a>
+                        <li>live- <a href="https://game-finder.herokuapp.com/" target="_blank" class="nonClick" rel="noopener noreferrer">Find some Reccommendations</a>
                         </li>
                         <li>repo- <a href="https://github.com/nasjones/my_games" target="_blank" rel="noopener noreferrer"
                                 class="nonClick">Check out the files</a>
@@ -203,7 +203,7 @@ let allHtml = `<section id="display1" class="displayed">
             <hr>
             <article class="work" id="item-2">
                 <div class="work-photo">
-                    <a href="https://quizbowl-opal.vercel.app/" target="_blank" rel="noopener noreferrer" class="nonClick">
+                    <a href="https://quiz-bowl-one.vercel.app/" target="_blank" rel="noopener noreferrer" class="nonClick">
                         <div class="content" style="background-image: url('quizbowl.png');">
                         </div>
                     </a>
@@ -214,7 +214,7 @@ let allHtml = `<section id="display1" class="displayed">
                         these quizzes public or private where they are only accessible by the unique link provided. This
                         project showcases my skills in Javascript/ CSS/ HTML/ React/ Node/ PostgreSQL.</p>
                     <ul>
-                        <li>live- <a href="https://quizbowl-opal.vercel.app/" target="_blank" rel="noopener noreferrer"class="nonClick">Create a
+                        <li>live- <a href="https://quiz-bowl-one.vercel.app/" target="_blank" rel="noopener noreferrer"class="nonClick">Create a
                                 quiz</a>
                         </li>
                         <li>repo- <a href="https://github.com/nasjones/quiz-maker-app" target="_blank" rel="noopener noreferrer"
@@ -250,7 +250,7 @@ let allHtml = `<section id="display1" class="displayed">
             <hr>
             <article class="work" id="item-4">
                 <div class="work-photo">
-                    <a href="https://showtunes.vercel.app/" target="_blank" rel="noopener noreferrer" class="nonClick">
+                    <a href="https://show-tunes.vercel.app/" target="_blank" rel="noopener noreferrer" class="nonClick">
                         <div class="content" style="background-image: url('Showtunes.png');">
                         </div>
                     </a>
@@ -263,7 +263,7 @@ let allHtml = `<section id="display1" class="displayed">
                         and creates a playlist! This project showcases my skills in
                         Javascript/ CSS/ HTML/ React/ Node/ PostgreSQL.</p>
                     <ul class="workLinks">
-                        <li>live- <a href="https://showtunes.vercel.app/" target="_blank" rel="noopener noreferrer" class="nonClick">Use
+                        <li>live- <a href="https://show-tunes.vercel.app/" target="_blank" rel="noopener noreferrer" class="nonClick">Use
                                 Showtunes</a>
                         </li>
                         <li>repo- <a href="https://github.com/nasjones/playlist-client" target="_blank" rel="noopener noreferrer"
