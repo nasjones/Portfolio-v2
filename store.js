@@ -1,12 +1,12 @@
-let workHtml = `<section id="display1" class="displayed">
-            <article class="work" id="item-1">
-                <div class="work-photo">
+let projectsHtml = `<section id="display1" class="displayed">
+            <article class="projects" id="item-1">
+                <div class="projects-photo">
                     <a href="https://game-finder.herokuapp.com" target="_blank" rel="noopener noreferrer" class="nonClick">
                         <div class="content" style="background-image: url('MyGames.png');">
                         </div>
                     </a>
                 </div>
-                <div class="work-sum">
+                <div class="projects-sum">
                     <h3>My Games</h3>
                     <p class="body-text">A web app that allows users to search for and save their favorite video games and receive reccommendations of similar video games.
                     This project showcases my skills in Python/ JavaScript/ Flask/ PostgreSQL/ CSS/ HTML.</p>
@@ -20,14 +20,14 @@ let workHtml = `<section id="display1" class="displayed">
                 </div>
             </article>
             <hr>
-            <article class="work" id="item-2">
-                <div class="work-photo">
+            <article class="projects" id="item-2">
+                <div class="projects-photo">
                     <a href="https://quiz-bowl-one.vercel.app/" target="_blank" rel="noopener noreferrer" class="nonClick">
                         <div class="content" style="background-image: url('quizbowl.png');">
                         </div>
                     </a>
                 </div>
-                <div class="work-sum">
+                <div class="projects-sum">
                     <h3>QuizBowl</h3>
                     <p class="body-text">A web app that allows users to create quizzes about whatever they want and make
                         these quizzes public or private where they are only accessible by the unique link provided. This
@@ -43,19 +43,19 @@ let workHtml = `<section id="display1" class="displayed">
                 </div>
             </article>
             <hr>
-            <article class="work" id="item-3">
-                <div class="work-photo">
+            <article class="projects" id="item-3">
+                <div class="projects-photo">
                     <a href="https://nasjones.github.io/Crudhub/" target="_blank" rel="noopener noreferrer" class="nonClick">
                         <div class="content" style="background-image: url('Crudhub.png');">
                         </div>
                     </a>
                 </div>
-                <div class="work-sum">
+                <div class="projects-sum">
                     <h3>Crudhub</h3>
                     <p class="body-text">A web app that takes a user's food inquiry and returns matching recipes and
                         restaurants within half a mile of them using the Edamam API and Google
                         Places API. This project showcases my skills in Javascript/ Jquery/ CSS/ HTML.</p>
-                    <ul class="workLinks">
+                    <ul class="projectsLinks">
                         <li>live- <a href="https://nasjones.github.io/Crudhub/" target="_blank" rel="noopener noreferrer" class="nonClick">Use
                                 Crudhub</a>
                         </li>
@@ -67,21 +67,21 @@ let workHtml = `<section id="display1" class="displayed">
                 </div>
             </article>
             <hr>
-            <article class="work" id="item-4">
-                <div class="work-photo">
+            <article class="projects" id="item-4">
+                <div class="projects-photo">
                     <a href="https://show-tunes.vercel.app/" target="_blank" rel="noopener noreferrer" class="nonClick">
                         <div class="content" style="background-image: url('Showtunes.png');">
                         </div>
                     </a>
                 </div>
 
-                <div class="work-sum">
+                <div class="projects-sum">
                     <h3>Showtunes</h3>
                     <p class="body-text">This web app allows users to create playlists and discover new music. Users
                         choose a genre and input their ideal playlist length and the app makes a call to the Spotify API
                         and creates a playlist! This project showcases my skills in
                         Javascript/ CSS/ HTML/ React/ Node/ PostgreSQL.</p>
-                    <ul class="workLinks">
+                    <ul class="projectsLinks">
                         <li>live- <a href="https://show-tunes.vercel.app/" target="_blank" rel="noopener noreferrer" class="nonClick">Use
                                 Showtunes</a>
                         </li>
@@ -121,12 +121,14 @@ let resHtml = `<section id="display3" class="displayed">
                     <li>jQuery</li>
                     <li>HTML5</li>
                     <li>CSS3</li>
+										<li>Typescript</li>
                 </ul>
                 <h4>Back-end</h4>
                 <ul class="listWrap">
                     <li>Node.js</li>
                     <li>MongoDB</li>
                     <li>PostgreSQL</li>
+										<li>Ruby</li>
                 </ul>
                 <h4>Other technologies</h4>
                <ul class="listWrap">
@@ -146,6 +148,15 @@ let resHtml = `<section id="display3" class="displayed">
                     <li>RESTful APIs</li>
                     <li>Unit testing</li>
                     <li>Data structures</li>
+                </ul>
+            </div>
+						<div class="resWrap">
+                <h3>Work</h3>
+                <h4>Coinbase 2022-2023</h4>
+                <span class="ital">Software Engineer</span>
+                <br/>
+                <ul class="listWrap">
+                    <li>Software Engineer IC fullstack focused primarily projectsing on the Coinbase Prime product.</li>
                 </ul>
             </div>
             <div class="resWrap">
@@ -179,15 +190,15 @@ let resHtml = `<section id="display3" class="displayed">
         </section>`;
 
 let allHtml = `<section id="display1" class="displayed">
-            <span class="orangeText"><h2>My Work</h2></span>
-            <article class="work" id="item-1">
-                <div class="work-photo">
+            <span class="orangeText"><h2>My projects</h2></span>
+            <article class="projects" id="item-1">
+                <div class="projects-photo">
                     <a href="https://game-finder.herokuapp.com/" target="_blank" rel="noopener noreferrer" class="nonClick">
                         <div class="content" style="background-image: url('MyGames.png');">
                         </div>
                     </a>
                 </div>
-                <div class="work-sum">
+                <div class="projects-sum">
                     <h3>My Games</h3>
                     <p class="body-text">A web app that allows users to search for and save their favorite video games and receive reccommendations of similar video games.
                     This project showcases my skills in Python/ JavaScript/ Flask/ PostgreSQL/ CSS/ HTML.</p>
@@ -201,14 +212,14 @@ let allHtml = `<section id="display1" class="displayed">
                 </div>
             </article>
             <hr>
-            <article class="work" id="item-2">
-                <div class="work-photo">
+            <article class="projects" id="item-2">
+                <div class="projects-photo">
                     <a href="https://quiz-bowl-one.vercel.app/" target="_blank" rel="noopener noreferrer" class="nonClick">
                         <div class="content" style="background-image: url('quizbowl.png');">
                         </div>
                     </a>
                 </div>
-                <div class="work-sum">
+                <div class="projects-sum">
                     <h3>QuizBowl</h3>
                     <p class="body-text">A web app that allows users to create quizzes about whatever they want and make
                         these quizzes public or private where they are only accessible by the unique link provided. This
@@ -224,19 +235,19 @@ let allHtml = `<section id="display1" class="displayed">
                 </div>
             </article>
             <hr>
-            <article class="work" id="item-3">
-                <div class="work-photo">
+            <article class="projects" id="item-3">
+                <div class="projects-photo">
                     <a href="https://nasjones.github.io/Crudhub/" target="_blank" rel="noopener noreferrer" class="nonClick">
                         <div class="content" style="background-image: url('Crudhub.png');">
                         </div>
                     </a>
                 </div>
-                <div class="work-sum">
+                <div class="projects-sum">
                     <h3>Crudhub</h3>
                     <p class="body-text">A web app that takes a user's food inquiry and returns matching recipes and
                         restaurants within half a mile of them using the Edamam API and Google
                         Places API. This project showcases my skills in Javascript/ Jquery/ CSS/ HTML.</p>
-                    <ul class="workLinks">
+                    <ul class="projectsLinks">
                         <li>live- <a href="https://nasjones.github.io/Crudhub/" target="_blank" rel="noopener noreferrer" class="nonClick">Use
                                 Crudhub</a>
                         </li>
@@ -248,21 +259,21 @@ let allHtml = `<section id="display1" class="displayed">
                 </div>
             </article>
             <hr>
-            <article class="work" id="item-4">
-                <div class="work-photo">
+            <article class="projects" id="item-4">
+                <div class="projects-photo">
                     <a href="https://show-tunes.vercel.app/" target="_blank" rel="noopener noreferrer" class="nonClick">
                         <div class="content" style="background-image: url('Showtunes.png');">
                         </div>
                     </a>
                 </div>
 
-                <div class="work-sum">
+                <div class="projects-sum">
                     <h3>Showtunes</h3>
                     <p class="body-text">This web app allows users to create playlists and discover new music. Users
                         choose a genre and input their ideal playlist length and the app makes a call to the Spotify API
                         and creates a playlist! This project showcases my skills in
                         Javascript/ CSS/ HTML/ React/ Node/ PostgreSQL.</p>
-                    <ul class="workLinks">
+                    <ul class="projectsLinks">
                         <li>live- <a href="https://show-tunes.vercel.app/" target="_blank" rel="noopener noreferrer" class="nonClick">Use
                                 Showtunes</a>
                         </li>
